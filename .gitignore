@@ -1,0 +1,6 @@
+# Lokale filer fra PhpStorm og styresystemet
+.idea/
+.DS_Store
+Thumbs.db
+node_modules/
+# Den færdige video tilføjes bevidst, når den er komprimeret til web.
