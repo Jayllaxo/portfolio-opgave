@@ -36,15 +36,9 @@
     <!-- SHOWREEL: Erstat pladsholderen med din egen video. Se README. -->
     <section class="showreel container" id="showreel" aria-labelledby="reel-title">
       <div class="section-top"><h2 id="reel-title">Et indblik i mit univers</h2><span>01 / Showreel</span></div>
-      <div class="reel-placeholder">
-        <div class="reel-orbit" aria-hidden="true"></div>
-        <span class="reel-label">DESIGN / KODE / BEVÆGELSE</span>
-        <p class="reel-word" aria-hidden="true">Show<span>reel.</span></p>
-        <div class="reel-note"><span class="play-icon" aria-hidden="true">▷</span><p>Min showreel er på vej<span>Her kommer min video på 60–90 sekunder.</span></p></div>
-        <span class="reel-year">JOHAN ØJVIND SKAARUP</span>
-      </div>
-      <!-- Når videoen er klar: Erstat hele .reel-placeholder ovenfor med:
-      <video class="showreel-video" controls playsinline preload="metadata" poster="assets/showreel-poster.webp">
+      <img class="showreel-image" src="assets/showreel.png" alt="Showreel er på vej. Her kommer min video på 60–90 sekunder." width="2360" height="1080">
+      <!-- Når videoen er klar: Erstat billedet ovenfor med:
+      <video class="showreel-video" controls playsinline preload="metadata" poster="assets/showreel.png">
         <source src="assets/showreel.mp4" type="video/mp4">
         <track kind="captions" src="assets/undertekster.vtt" srclang="da" label="Dansk">
         Din browser kan ikke afspille videoen. <a href="assets/showreel.mp4">Hent videoen</a>.
@@ -53,43 +47,36 @@
       -->
     </section>
 
-    <!-- PROJEKTER: Kopiér et article for at tilføje et projekt.
-         data-category forbinder kortet til en filterknap. -->
+    <!-- PROJEKTER: Forsiden viser tre udvalgte projekter. Resten kan tilføjes i projekter.html. -->
     <section class="projects container section-space" id="projekter" aria-labelledby="projects-title">
       <div class="section-heading"><div><p class="eyebrow">Udvalgte nedslag</p><h2 id="projects-title">Tanker. Forsøg. <span class="serif">Resultater.</span></h2></div><p>Her får mine kommende projekter plads.<br>Indtil da: et lille kig på mulighederne.</p></div>
-      <div class="filters" role="group" aria-label="Filtrér projekter" hidden>
-        <button type="button" data-filter="alle" aria-pressed="true">Alle projekter</button>
-        <button type="button" data-filter="design" aria-pressed="false">Design</button>
-        <button type="button" data-filter="web" aria-pressed="false">Web</button>
-        <button type="button" data-filter="video" aria-pressed="false">Video</button>
-      </div>
-      <p class="visually-hidden" id="filter-status" role="status"></p>
       <div class="project-grid">
-        <article class="project-card" data-category="design">
-          <img src="assets/design.svg" alt="Eksempelillustration af en plakat med orange cirkel og typografi" width="800" height="600" loading="lazy">
+        <article class="project-card">
+          <img src="assets/design.png" alt="Eksempelillustration af en plakat med orange cirkel og typografi" width="800" height="600" loading="lazy">
           <div class="project-meta"><span>Visuelt design</span><span>01</span></div>
           <h3>Plads til et visuelt projekt</h3>
           <p>Eksempelindhold · Erstat med dit eget billede, projektets idé og din rolle i arbejdet.</p>
         </article>
-        <article class="project-card" data-category="web">
-          <img src="assets/web.svg" alt="Eksempelillustration af et website med grøn baggrund og en enkel sideopsætning" width="800" height="600" loading="lazy">
+        <article class="project-card">
+          <img src="assets/web.png" alt="Eksempelillustration af et website med grøn baggrund og en enkel sideopsætning" width="800" height="600" loading="lazy">
           <div class="project-meta"><span>Web &amp; interaktion</span><span>02</span></div>
           <h3>Plads til en digital oplevelse</h3>
           <p>Eksempelindhold · Fortæl om løsningen, hvem den er til, og hvad du har lært.</p>
         </article>
-        <article class="project-card" data-category="video">
-          <img src="assets/video.svg" alt="Eksempelillustration af filmrammer i lilla og gul" width="800" height="600" loading="lazy">
+        <article class="project-card">
+          <img src="assets/video.png" alt="Eksempelillustration af filmrammer i lilla og gul" width="800" height="600" loading="lazy">
           <div class="project-meta"><span>Video &amp; fortælling</span><span>03</span></div>
           <h3>Plads til levende billeder</h3>
-          <p>Eksempelindhold · Udskift billedet med en video, når dit projekt er klar. Se vejledningen i README.</p>
+          <p>Eksempelindhold · Udskift billedet med dit eget videoprojekt, når det er klar.</p>
         </article>
       </div>
+      <a class="more-link" href="projekter.html">See more <span aria-hidden="true">→</span></a>
     </section>
 
     <!-- OM MIG: Tilpas teksten, så den afspejler dig og dine kompetencer. -->
     <section class="about section-space" id="om-mig" aria-labelledby="about-title">
       <div class="container about-grid">
-        <div class="portrait-placeholder" role="img" aria-label="Grafisk pladsholder til Johans portræt"><span class="portrait-star" aria-hidden="true">✳︎</span><span>Et ansigt bag idéerne<br><small>Her kan dit portræt komme</small></span></div>
+        <img class="portrait-image" src="assets/portraet.png" alt="Pladsholder til Johans portræt – her kan dit eget billede komme">
         <div class="about-copy"><p class="eyebrow">Lidt om mig</p><h2 id="about-title">Hej, jeg hedder Johan.<br><span class="serif">Et kreativt liv.</span></h2><p>Jeg hedder Johan Øjvind Skaarup og læser til multimediedesigner på Zealand. Her samler jeg mit arbejde og min udvikling gennem uddannelsen.</p><p>Jeg arbejder med visuelle idéer, hjemmesider og video. Denne portfolio får løbende nye projekter, der viser min proces fra de første tanker til det færdige resultat.</p><p class="about-edit">Tilpas gerne denne introduktion med dine egne interesser og mål.</p><ul class="skills" aria-label="Portfolioens fagområder"><li>Visuelt design</li><li>HTML &amp; CSS</li><li>JavaScript</li><li>Video</li></ul></div>
       </div>
     </section>

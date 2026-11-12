@@ -28,29 +28,3 @@ document.addEventListener('keydown', function (event) {
     menuButton.focus();
   }
 });
-
-// PROJEKTFILTER: Sammenlign knappens filter med hvert projekts kategori.
-// Uden JavaScript vises alle projekter og hele navigationen stadig.
-const filterButtons = document.querySelectorAll('[data-filter]');
-const projects = document.querySelectorAll('.project-card');
-const filterStatus = document.querySelector('#filter-status');
-document.querySelector('.filters').hidden = false;
-
-filterButtons.forEach(function (button) {
-  button.addEventListener('click', function () {
-    const category = button.dataset.filter;
-    let visibleCount = 0;
-
-    filterButtons.forEach(function (filterButton) {
-      filterButton.setAttribute('aria-pressed', String(filterButton === button));
-    });
-
-    projects.forEach(function (project) {
-      const showProject = category === 'alle' || project.dataset.category === category;
-      project.hidden = !showProject;
-      if (showProject) visibleCount++;
-    });
-
-    filterStatus.textContent = visibleCount + ' projekter vises.';
-  });
-});
