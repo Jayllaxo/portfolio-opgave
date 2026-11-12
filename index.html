@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Johan Øjvind Skaarup – multimediedesignerstuderende på Zealand. Portfolio med design, digitale oplevelser og showreel.">
+  <meta name="description" content="Johan Øjvind Skaarup – multimediedesignerstuderende på Zealand. Portfolio med showreel og fremvisning af tidligere og nuværende projekter.">
   <title>Johan Øjvind Skaarup · Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
@@ -16,26 +16,24 @@
     <a class="logo" href="#forside" aria-label="Johan Øjvind Skaarup, til forsiden">JS<span aria-hidden="true">✳︎</span></a>
     <button class="menu-button" type="button" aria-controls="navigation" aria-expanded="false" hidden>Menu <span aria-hidden="true">☰</span></button>
     <nav id="navigation" aria-label="Hovednavigation">
-      <a href="#projekter">Projekter</a>
-      <a href="#om-mig">Om mig</a>
-      <a href="#kontakt">Lad os tale sammen <span aria-hidden="true">→</span></a>
+      <a href="#projekter">Projects</a>
+      <a href="#om-mig">About me</a>
+      <a href="#kontakt">Contact me<span aria-hidden="true"> →</span></a>
     </nav>
   </header>
 
   <main id="indhold">
     <!-- INTRO: Ret overskrift og introduktion her. -->
     <section class="hero container" id="forside" aria-labelledby="hero-title">
-      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Johan Øjvind Skaarup · Multimediedesignerstuderende</p>
-      <h1 id="hero-title">Idéer bliver til<br><span class="serif">digitale oplevelser.</span></h1>
+      <h1 id="hero-title">The digital portfolio<br><span class="serif" style="font-size: 50px">of Johan Oejvind Skaarup.</span></h1>
       <div class="hero-bottom">
-        <p>Velkommen til mit kreative rum. Jeg studerer på Zealand og udforsker mødet mellem design, kode og levende billeder.</p>
-        <a class="text-link" href="#showreel">Se min showreel <span aria-hidden="true">↓</span></a>
+        <p>Welcome to my page containing my showreel, an about me and a page with all the projects I've worked on throughout my life that I deem worth showing. From films to music to video games to literary works. Thank you for visiting.</p>
       </div>
     </section>
 
     <!-- SHOWREEL: Erstat pladsholderen med din egen video. Se README. -->
     <section class="showreel container" id="showreel" aria-labelledby="reel-title">
-      <div class="section-top"><h2 id="reel-title">Et indblik i mit univers</h2><span>01 / Showreel</span></div>
+      <div class="section-top"><h2 id="reel-title">A short showreel containing my most important work.</h2></div>
       <img class="showreel-image" src="assets/showreel.png" alt="Showreel er på vej. Her kommer min video på 60–90 sekunder." width="2360" height="1080">
       <!-- Når videoen er klar: Erstat billedet ovenfor med:
       <video class="showreel-video" controls playsinline preload="metadata" poster="assets/showreel.png">
@@ -49,25 +47,25 @@
 
     <!-- PROJEKTER: Forsiden viser tre udvalgte projekter. Resten kan tilføjes i projekter.html. -->
     <section class="projects container section-space" id="projekter" aria-labelledby="projects-title">
-      <div class="section-heading"><div><p class="eyebrow">Udvalgte nedslag</p><h2 id="projects-title">Tanker. Forsøg. <span class="serif">Resultater.</span></h2></div><p>Her får mine kommende projekter plads.<br>Indtil da: et lille kig på mulighederne.</p></div>
+      <div class="section-heading"><div><p class="eyebrow">Some of my proudest work.</p><h2 id="projects-title">Films. Music. <span class="serif">Creativity.</span></h2></div></div>
       <div class="project-grid">
         <article class="project-card">
           <img src="assets/design.png" alt="Eksempelillustration af en plakat med orange cirkel og typografi" width="800" height="600" loading="lazy">
-          <div class="project-meta"><span>Visuelt design</span><span>01</span></div>
-          <h3>Plads til et visuelt projekt</h3>
-          <p>Eksempelindhold · Erstat med dit eget billede, projektets idé og din rolle i arbejdet.</p>
+          <div class="project-meta"><span>Film</span><span>01</span></div>
+          <h3>A short film.</h3>
+          <p>Edited, produced and filmed by me. Shown in Grand Teater. Made at KBH Film- & Fotoskole.</p>
         </article>
         <article class="project-card">
           <img src="assets/web.png" alt="Eksempelillustration af et website med grøn baggrund og en enkel sideopsætning" width="800" height="600" loading="lazy">
-          <div class="project-meta"><span>Web &amp; interaktion</span><span>02</span></div>
-          <h3>Plads til en digital oplevelse</h3>
-          <p>Eksempelindhold · Fortæl om løsningen, hvem den er til, og hvad du har lært.</p>
+          <div class="project-meta"><span>Video Games</span><span>02</span></div>
+          <h3>A 2D survival horror video game.</h3>
+          <p>An ongoing project being worked on solely by me. Being made in Godot.</p>
         </article>
         <article class="project-card">
           <img src="assets/video.png" alt="Eksempelillustration af filmrammer i lilla og gul" width="800" height="600" loading="lazy">
-          <div class="project-meta"><span>Video &amp; fortælling</span><span>03</span></div>
-          <h3>Plads til levende billeder</h3>
-          <p>Eksempelindhold · Udskift billedet med dit eget videoprojekt, når det er klar.</p>
+          <div class="project-meta"><span>Music</span><span>03</span></div>
+          <h3>A music production.</h3>
+          <p>One of several music productions made by me. Made in FL Studio.</p>
         </article>
       </div>
       <a class="more-link" href="projekter.html">See more <span aria-hidden="true">→</span></a>
@@ -77,15 +75,15 @@
     <section class="about section-space" id="om-mig" aria-labelledby="about-title">
       <div class="container about-grid">
         <img class="portrait-image" src="assets/portraet.png" alt="Pladsholder til Johans portræt – her kan dit eget billede komme">
-        <div class="about-copy"><p class="eyebrow">Lidt om mig</p><h2 id="about-title">Hej, jeg hedder Johan.<br><span class="serif">Et kreativt liv.</span></h2><p>Jeg hedder Johan Øjvind Skaarup og læser til multimediedesigner på Zealand. Her samler jeg mit arbejde og min udvikling gennem uddannelsen.</p><p>Jeg arbejder med visuelle idéer, hjemmesider og video. Denne portfolio får løbende nye projekter, der viser min proces fra de første tanker til det færdige resultat.</p><p class="about-edit">Tilpas gerne denne introduktion med dine egne interesser og mål.</p><ul class="skills" aria-label="Portfolioens fagområder"><li>Visuelt design</li><li>HTML &amp; CSS</li><li>JavaScript</li><li>Video</li></ul></div>
+        <div class="about-copy"><p class="eyebrow">A little about me</p><h2 id="about-title">Hi, my name is...<br></h2><p>Hi, my name is Johan Oejvind Skaarup and I'm 25 years old. The best way I can describe myself is that besides oxygen, I depend on creativity to live. It's a constant need for me - to create something.</p><p>Currently, I'm studying Multimediadesign at Zealand. Before that I studied Humanism/Journalism at Roskilde University and went to the film school KBH Film- & Fotoskole. </p><p>Besides jobs to pay bills, universities and schools, I've been a filmmaker, writer, social media manager, lyricist, YouTuber, editor, freelancer and a lot more.</p><p>What I'm currently working on includes a 2D survival horror video game, writing my next rap album and music production for both projects.</p><ul class="skills" aria-label="Portfolioens fagområder"><li>Webdesign</li><li>Visual design</li><li>HTML, CSS &amp; JavaScript</li><li>Music production</li><li>Video production</li><li>Filmmaking</li><li>Video games</li><li>Editing</li><li>SoMe management</li><li>Writing</li><li>Lyrics</li><li>Photo editing</li><li>Photo shooting</li><li>Tech & IT</li><li>AI assistance</li></ul></div>
       </div>
     </section>
 
     <!-- KONTAKT: mailto åbner brugerens mailprogram; der indsamles ingen data. -->
     <section class="contact container section-space" id="kontakt" aria-labelledby="contact-title">
-      <p class="eyebrow">En god samtale er en god start</p><h2 id="contact-title">Skal vi skabe<br><span class="serif">noget sammen?</span></h2><a class="contact-link" href="mailto:skaarnet@gmail.com">skaarnet@gmail.com <span aria-hidden="true">→</span></a>
+      <p class="eyebrow">Interested in working together?</p><h2 id="contact-title">Contact me below<br><span class="serif">and let's create!</span></h2><a class="contact-link" href="mailto:skaarnet@gmail.com">skaarnet@gmail.com <span aria-hidden="true">→</span></a>
     </section>
   </main>
-  <footer class="site-footer container"><p>© Johan Øjvind Skaarup</p><p>Designet &amp; kodet med nysgerrighed</p><a href="#forside">Til toppen ↑</a></footer>
+  <footer class="site-footer container"><p>© Johan Oejvind Skaarup</p><p>Designed &amp; coded by me.</p><a href="#forside">To the top ↑</a></footer>
 </body>
 </html>
