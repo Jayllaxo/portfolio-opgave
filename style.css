@@ -112,3 +112,31 @@ h2 { font-size: clamp(2rem, 4vw, 3.4rem); letter-spacing: -.045em; }
 .more-link { display: block; width: fit-content; margin: 36px auto 0; padding: 12px 24px; border: 1px solid var(--text); border-radius: 30px; text-decoration: none; }
 .more-link:hover { background: var(--text); color: var(--background); }
 .projects-intro { max-width: 550px; margin-bottom: 40px; color: var(--muted); }
+
+/* PROJEKTBILLEDER PÅ FORSIDEN: Gråt overlay fader ind ved hover og tastaturfokus. */
+.project-link { display: block; position: relative; }
+.project-overlay { position: absolute; inset: 0; display: grid; place-items: center; background: rgb(40 40 40 / 65%); color: white; font-size: 1.2rem; opacity: 0; transition: opacity .3s; }
+.project-link:hover .project-overlay, .project-link:focus-visible .project-overlay { opacity: 1; }
+/* På touchskærme vises teksten altid, fordi man ikke kan hover. */
+@media (hover: none) { .project-overlay { opacity: 1; background: rgb(40 40 40 / 35%); } }
+
+/* PROJEKTSIDEN: Hvert projekt får plads til tekst og større billeder/video. */
+.project-detail { max-width: 900px; margin: 0 auto 70px; padding-top: 30px; border-top: 1px solid var(--line); }
+.project-detail h2 { margin-bottom: 20px; }
+.project-detail > p { max-width: 650px; margin-bottom: 24px; color: var(--muted); }
+.project-detail video { display: block; width: 100%; aspect-ratio: 16 / 9; background: var(--text); }
+.media-note { font-size: .85rem; color: var(--muted); margin-top: 12px; }
+
+/* GALLERI: Miniaturebillederne kan skifte det store billede. */
+.gallery-main { aspect-ratio: 16 / 9; object-fit: contain; background: var(--text); }
+.gallery-thumbnails { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 12px; }
+.gallery-thumbnails button { width: 110px; padding: 3px; border: 2px solid transparent; background: transparent; }
+.gallery-thumbnails button[aria-pressed="true"] { border-color: var(--accent); }
+.gallery-thumbnails img { aspect-ratio: 16 / 9; object-fit: cover; }
+
+/* MUSIK: Play/pause oven på billedet. Browserens egen afspiller står under det. */
+.music-cover { position: relative; }
+.music-play { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 70px; height: 70px; border: 1px solid white; border-radius: 50%; background: rgb(40 40 40 / 80%); color: white; font-size: 1.6rem; }
+.music-play:disabled { opacity: .65; cursor: default; }
+.music-player audio { display: block; width: 100%; margin-top: 14px; }
+@media (prefers-reduced-motion: reduce) { .project-overlay { transition: none; } }

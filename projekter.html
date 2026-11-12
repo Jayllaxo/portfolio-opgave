@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Johan Øjvind Skaarup – multimediedesignerstuderende på Zealand. Portfolio med design, digitale oplevelser og showreel.">
-  <title>Alle projekter · Johan Øjvind Skaarup</title>
+  <meta name="description" content="Johan Øjvind Skaarup – multimediedesignerstuderende på Zealand. Portfolio med showreel og fremvisning af tidligere og nuværende projekter.">
+  <title>Projects · Johan Oejvind Skaarup</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
@@ -16,41 +16,85 @@
     <a class="logo" href="index.html" aria-label="Johan Øjvind Skaarup, til forsiden">JS<span aria-hidden="true">✳︎</span></a>
     <button class="menu-button" type="button" aria-controls="navigation" aria-expanded="false" hidden>Menu <span aria-hidden="true">☰</span></button>
     <nav id="navigation" aria-label="Hovednavigation">
-      <a href="projekter.html" aria-current="page">Projekter</a>
-      <a href="index.html#om-mig">Om mig</a>
-      <a href="index.html#kontakt">Lad os tale sammen <span aria-hidden="true">→</span></a>
+      <a href="projekter.html" aria-current="page">Projects</a>
+      <a href="index.html#om-mig">About me</a>
+      <a href="index.html#kontakt">Contact me<span aria-hidden="true"> →</span></a>
     </nav>
   </header>
 
   <main id="indhold" class="container section-space">
-    <!-- INTRO: Ret overskrift og introduktion her. -->
-    <p class="eyebrow">Mit kreative arbejde</p>
-    <h1>Alle <span class="serif">projekter.</span></h1>
-    <p class="projects-intro">Her samler jeg mine projekter inden for design, web og video. De første tre er foreløbig eksempelindhold.</p>
+    <h1>My <span class="serif">projects.</span></h1>
 
-    <!-- NYT PROJEKT: Kopiér et helt article nedenfor. Ret billede, alt-tekst, nummer, titel og beskrivelse. -->
-      <div class="project-grid">
-        <article class="project-card">
-          <img src="assets/design.png" alt="Eksempelillustration af en plakat med orange cirkel og typografi" width="800" height="600" loading="lazy">
-          <div class="project-meta"><span>Visuelt design</span><span>01</span></div>
-          <h3>Plads til et visuelt projekt</h3>
-          <p>Eksempelindhold · Erstat med dit eget billede, projektets idé og din rolle i arbejdet.</p>
-        </article>
-        <article class="project-card">
-          <img src="assets/web.png" alt="Eksempelillustration af et website med grøn baggrund og en enkel sideopsætning" width="800" height="600" loading="lazy">
-          <div class="project-meta"><span>Web &amp; interaktion</span><span>02</span></div>
-          <h3>Plads til en digital oplevelse</h3>
-          <p>Eksempelindhold · Fortæl om løsningen, hvem den er til, og hvad du har lært.</p>
-        </article>
-        <article class="project-card">
-          <img src="assets/video.png" alt="Eksempelillustration af filmrammer i lilla og gul" width="800" height="600" loading="lazy">
-          <div class="project-meta"><span>Video &amp; fortælling</span><span>03</span></div>
-          <h3>Plads til levende billeder</h3>
-          <p>Eksempelindhold · Udskift billedet med dit eget videoprojekt, når det er klar.</p>
-        </article>
+    <!-- FILM: Læg din film i assets som short-film.mp4.
+         Fjern derefter kommentartegnene omkring source-linjen i video nedenfor.
+         Ret også teksten "Film coming soon", når filmen er tilføjet. -->
+    <article class="project-detail" id="short-film" aria-labelledby="film-title">
+      <div class="project-meta"><span>Film</span><span>01</span></div>
+      <h2 id="film-title">A short film.</h2>
+      <p>Edited, produced and filmed by me. Shown in Grand Teater. Made at KBH Film- &amp; Fotoskole.</p>
+      <video controls playsinline preload="none" poster="assets/short_film_screenshot1.png" aria-label="My short film">
+        <!-- <source src="assets/short-film.mp4" type="video/mp4"> -->
+        Your browser does not support video playback.
+      </video>
+      <p class="media-note">Film coming soon.</p>
+    </article>
+
+    <!-- SPIL: Det store billede skiftes, når man klikker på et miniaturebillede.
+         Tilføj flere screenshots ved at kopiere en button i gallery-thumbnails.
+         Ret src og alt i den kopierede button til dit nye billede. -->
+    <article class="project-detail" id="video-game" aria-labelledby="game-title">
+      <div class="project-meta"><span>Video Games</span><span>02</span></div>
+      <h2 id="game-title">A 2D survival horror video game.</h2>
+      <p>An ongoing project being worked on solely by me. Being made in Godot.</p>
+      <div class="gallery">
+        <img class="gallery-main" src="assets/video_game_screenshot1.png" alt="Screenshot from my 2D survival horror game">
+        <div class="gallery-thumbnails" role="group" aria-label="Choose a game screenshot">
+          <button type="button" aria-label="Show game screenshot 1" aria-pressed="true">
+            <img src="assets/video_game_screenshot1.png" alt="Screenshot from my 2D survival horror game">
+          </button>
+          <!-- EKSTRA SCREENSHOT: Tilføj filen i assets og fjern kommentartegnene herunder.
+          <button type="button" aria-label="Show game screenshot 2" aria-pressed="false">
+            <img src="assets/video_game_screenshot2.png" alt="Describe your second game screenshot here">
+          </button>
+          -->
+        </div>
       </div>
-    <a class="more-link" href="index.html#projekter">← Tilbage til forsiden</a>
+    </article>
+
+    <!-- MUSIK: Læg din lydfil i assets som music.mp3 og fjern kommentartegnene
+         omkring source-linjen. Play-knappen aktiveres, når en source er tilføjet.
+         Den almindelige lydafspiller giver også pause, lydstyrke og mulighed for at spole. -->
+    <article class="project-detail" id="music" aria-labelledby="music-title">
+      <div class="project-meta"><span>Music</span><span>03</span></div>
+      <h2 id="music-title">A music production.</h2>
+      <p>One of several music productions made by me. Made in FL Studio.</p>
+      <div class="music-player">
+        <div class="music-cover">
+          <img src="assets/music_screenshot1.jpg" alt="Cover image for my music production">
+          <button class="music-play" type="button" aria-label="Play music" disabled>▶︎</button>
+        </div>
+        <audio controls preload="none" aria-label="My music production">
+          <!-- <source src="assets/music.mp3" type="audio/mpeg"> -->
+          Your browser does not support audio playback.
+        </audio>
+        <p class="media-note" role="status">Audio coming soon.</p>
+      </div>
+    </article>
+
+    <!-- SKABELON TIL FLERE PROJEKTER:
+         Kopiér hele article nedenfor og placér kopien uden for denne kommentar.
+         Giv hvert projekt et unikt id. Ret nummer, titel, tekst, billede og alt-tekst.
+         Du kan også kopiere video, gallery eller music-player fra projekterne ovenfor.
+    <article class="project-detail" id="new-project" aria-labelledby="new-project-title">
+      <div class="project-meta"><span>Category</span><span>04</span></div>
+      <h2 id="new-project-title">Project title.</h2>
+      <p>Write about your project and your role here.</p>
+      <img src="assets/design.png" alt="Describe your project image here" loading="lazy">
+    </article>
+    -->
+
+    <a class="more-link" href="index.html#projekter">← Back to the homepage</a>
   </main>
-  <footer class="site-footer container"><p>© Johan Øjvind Skaarup</p><p>Designet &amp; kodet med nysgerrighed</p><a href="index.html">Til forsiden ↑</a></footer>
+  <footer class="site-footer container"><p>© Johan Oejvind Skaarup</p><p>Designed &amp; coded by me.</p><a href="index.html">Back to the homepage ↑</a></footer>
 </body>
 </html>
