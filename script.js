@@ -29,64 +29,70 @@ document.addEventListener('keydown', function (event) {
   }
 });
 
-// GALLERI: Et klik på et miniaturebillede skifter det store billede.
-document.querySelectorAll('.gallery').forEach(function (gallery) {
+// SPILBILLEDER: Et nummer holder styr på det valgte billede.
+// Første billede har nummer 0, andet billede har nummer 1 osv.
+const gallery = document.querySelector('.gallery');
+
+// Galleriet findes kun på projektsiden.
+if (gallery) {
   const mainImage = gallery.querySelector('.gallery-main');
-  const buttons = gallery.querySelectorAll('.gallery-thumbnails button');
-
-  buttons.forEach(function (button) {
-    button.addEventListener('click', function () {
-      const image = button.querySelector('img');
-      mainImage.src = image.src;
-      mainImage.alt = image.alt;
-      buttons.forEach(function (otherButton) {
-        otherButton.setAttribute('aria-pressed', String(otherButton === button));
-      });
-    });
-  });
-});
-
-// FORSTØR BILLEDE: Vis altid det screenshot, som er valgt i galleriet.
-const imageDialog = document.querySelector('#image-dialog');
-if (imageDialog) {
+  const thumbnails = gallery.querySelectorAll('.gallery-thumbnails button');
+  const enlargeButton = gallery.querySelector('.image-enlarge');
+  const imageDialog = document.querySelector('#image-dialog');
   const enlargedImage = imageDialog.querySelector('img');
-  let activeGallery;
-  document.querySelectorAll('.image-enlarge').forEach(function (button) {
-    button.hidden = false;
-    button.addEventListener('click', function () {
-      activeGallery = button.closest('.gallery');
-      const image = activeGallery.querySelector('.gallery-main');
-      enlargedImage.src = image.src;
-      enlargedImage.alt = image.alt;
-      imageDialog.showModal();
-    });
-  });
+  let currentImage = 0;
 
-  // Pilene vælger næste/forrige miniature og opdaterer også billedet bag vinduet.
-  function changeImage(direction) {
-    const buttons = Array.from(activeGallery.querySelectorAll('.gallery-thumbnails button'));
-    let index = buttons.findIndex(function (button) {
-      return button.getAttribute('aria-pressed') === 'true';
-    });
-    index += direction;
-    if (index < 0) index = buttons.length - 1;
-    if (index >= buttons.length) index = 0;
-    buttons[index].click();
-    const image = activeGallery.querySelector('.gallery-main');
+  // Samme funktion opdaterer både det lille og det forstørrede billede.
+  function showImage(number) {
+    if (number < 0) number = thumbnails.length - 1;
+    if (number >= thumbnails.length) number = 0;
+    currentImage = number;
+
+    const image = thumbnails[number].querySelector('img');
+    mainImage.src = image.src;
+    mainImage.alt = image.alt;
     enlargedImage.src = image.src;
     enlargedImage.alt = image.alt;
+
+    thumbnails.forEach(function (button, index) {
+      button.setAttribute('aria-pressed', index === currentImage);
+    });
   }
 
-  imageDialog.querySelector('.image-previous').addEventListener('click', function () { changeImage(-1); });
-  imageDialog.querySelector('.image-next').addEventListener('click', function () { changeImage(1); });
+  // Klik på en miniature vælger dens billede.
+  thumbnails.forEach(function (button, index) {
+    button.addEventListener('click', function () {
+      showImage(index);
+    });
+  });
+
+  showImage(0);
+  enlargeButton.hidden = false;
+  enlargeButton.addEventListener('click', function () {
+    imageDialog.showModal();
+  });
+
+  // Pilene går ét billede tilbage eller frem.
+  imageDialog.querySelector('.image-previous').addEventListener('click', function () {
+    showImage(currentImage - 1);
+  });
+  imageDialog.querySelector('.image-next').addEventListener('click', function () {
+    showImage(currentImage + 1);
+  });
+
+  // Tastaturets pile virker også. Browseren lukker selv med Escape.
   imageDialog.addEventListener('keydown', function (event) {
-    if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+    if (event.key === 'ArrowLeft') {
       event.preventDefault();
-      changeImage(event.key === 'ArrowLeft' ? -1 : 1);
+      showImage(currentImage - 1);
+    }
+    if (event.key === 'ArrowRight') {
+      event.preventDefault();
+      showImage(currentImage + 1);
     }
   });
 
-  // Klik på den mørke baggrund lukker også billedet.
+  // Et klik på den mørke baggrund lukker billedet.
   imageDialog.addEventListener('click', function (event) {
     if (event.target === imageDialog) imageDialog.close();
   });
