@@ -11,7 +11,7 @@
 <body>
   <a class="skip-link" href="#indhold">Spring til indhold</a>
 
-  <!-- HEADER: Navnet og navigationen går igen på alle skærmstørrelser. -->
+
   <header class="site-header container">
     <a class="logo" href="index.html" aria-label="Johan Øjvind Skaarup, til forsiden">JS<span aria-hidden="true">✳︎</span></a>
     <button class="menu-button" type="button" aria-controls="navigation" aria-expanded="false" hidden>Menu <span aria-hidden="true">☰</span></button>
@@ -22,6 +22,7 @@
       <a href="projekter.html#kontakt">Contact me<span aria-hidden="true"> →</span></a>
     </nav>
   </header>
+
 
   <main id="indhold" class="container section-space">
     <h1>My <span class="italic-heading">projects.</span></h1>
@@ -103,16 +104,14 @@
       </iframe>
     </article>
 
-    <!-- SPIL: Det store billede skiftes, når man klikker på et miniaturebillede.
-         Tilføj flere screenshots ved at kopiere en button i gallery-thumbnails.
-         Ret src og alt i den kopierede button til dit nye billede. -->
+
     <article class="project-detail" id="video-game" aria-labelledby="game-title">
       <div class="project-meta"><span>Video Games</span><span>02</span></div>
       <h2 id="game-title">Video Game Projects</h2>
       <h3>2D survival horror game (2026-)</h3>
       <p>An ongoing project being worked on solely by me. Being made in Godot.</p>
       <div class="gallery">
-        <img class="gallery-main" src="assets/video_game_screenshot1.png" alt="Screenshot from my 2D survival horror game">
+        <img class="gallery-main" src="assets/project_pics_files/video_game_screenshot6.png" alt="Screenshot from my 2D survival horror game">
         <div class="gallery-thumbnails" role="group" aria-label="Choose a game screenshot">
           <button type="button" aria-label="Show game screenshot 1" aria-pressed="false">
             <img src="assets/project_pics_files/video_game_screenshot6.png" alt="Screenshot from my 2D survival horror game">
@@ -139,11 +138,43 @@
       </div>
     </article>
 
-    <!-- MUSIK: Knappen og browserens lydafspiller styrer samme lydfil. -->
+
     <article class="project-detail" id="music" aria-labelledby="music-title">
       <div class="project-meta"><span>Music</span><span>03</span></div>
       <h2 id="music-title">Music Projects</h2>
       <h3>Video Game Soundtrack (2026)</h3>
+      <p>Produced by me. Made in FL Studio.</p>
+      <div class="music-player">
+        <audio controls preload="none" aria-label="My music production">
+          <source src="assets/mp3_files/soundtrack_%201.mp3" type="audio/mpeg">
+        </audio>
+        <p class="media-note" role="status"></p>
+      </div>
+      <h3>Video Game Soundtrack (2026)</h3>
+      <p>Produced by me. Made in FL Studio.</p>
+      <div class="music-player">
+        <audio controls preload="none" aria-label="My music production">
+          <source src="assets/mp3_files/soundtrack_%202.mp3" type="audio/mpeg">
+        </audio>
+        <p class="media-note" role="status"></p>
+      </div>
+      <h3>Video Game Soundtrack (2026)</h3>
+      <p>Produced by me. Made in FL Studio.</p>
+      <div class="music-player">
+        <audio controls preload="none" aria-label="My music production">
+          <source src="assets/mp3_files/soundtrack_%203.mp3" type="audio/mpeg">
+        </audio>
+        <p class="media-note" role="status"></p>
+      </div>
+      <h3>Video Game Soundtrack (2026)</h3>
+      <p>Produced by me. Made in FL Studio.</p>
+      <div class="music-player">
+        <audio controls preload="none" aria-label="My music production">
+          <source src="assets/mp3_files/soundtrack_%204.mp3" type="audio/mpeg">
+        </audio>
+        <p class="media-note" role="status"></p>
+      </div>
+      <h3>Video Game Soundtrack (2025)</h3>
         <p>Produced by me. Made in FL Studio.</p>
         <div class="music-player">
           <audio controls preload="none" aria-label="My music production">
@@ -151,7 +182,7 @@
           </audio>
           <p class="media-note" role="status"></p>
         </div>
-        <h3 style="padding-top: 30px">Video Game Soundtrack (2026)</h3>
+        <h3 style="padding-top: 30px">Video Game Soundtrack (2025)</h3>
         <p>Produced by me. Made in FL Studio.</p>
         <div class="music-player">
           <audio controls preload="none" aria-label="My music production">
@@ -159,7 +190,7 @@
           </audio>
           <p class="media-note" role="status"></p>
         </div>
-        <h3 style="padding-top: 30px">Video Game Soundtrack (2026)</h3>
+        <h3 style="padding-top: 30px">Video Game Soundtrack (2025)</h3>
         <p>Produced by me. Made in FL Studio.</p>
         <div class="music-player">
           <audio controls preload="none" aria-label="My music production">
@@ -167,7 +198,7 @@
           </audio>
           <p class="media-note" role="status"></p>
         </div>
-        <h3 style="padding-top: 30px">Video Game Soundtrack (2026)</h3>
+        <h3 style="padding-top: 30px">Video Game Soundtrack (2025)</h3>
         <p>Produced by me. Made in FL Studio.</p>
         <div class="music-player">
           <audio controls preload="none" aria-label="My music production">
@@ -176,6 +207,7 @@
           <p class="media-note" role="status"></p>
         </div>
     </article>
+
 
     <article class="project-detail" id="songs" aria-labelledby="songs-title">
       <div class="project-meta"><span>Songs</span><span>04</span></div>
@@ -314,7 +346,7 @@
       </iframe>
     </article>
 
-    <!-- LITTERATUR: Hvert værk har titel, årstal, undertekst og et link til PDF-filen. -->
+
     <article class="project-detail" id="literary-works" aria-labelledby="literary-title">
       <div class="project-meta"><span>Writing</span><span>05</span></div>
       <h2 id="literary-title">Literary Projects</h2>
