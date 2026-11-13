@@ -146,3 +146,6 @@ h2 { font-size: clamp(2rem, 4vw, 3.4rem); letter-spacing: -.045em; }
 .music-play:disabled { opacity: .65; cursor: default; }
 .music-player audio { display: block; width: 100%; margin-top: 14px; }
 @media (prefers-reduced-motion: reduce) { .project-overlay { transition: none; } }
+
+/* LITTERATUR: Luft mellem værkerne uden ekstra JavaScript. */
+.literary-link { display: block; width: fit-content; margin-bottom: 30px; }
