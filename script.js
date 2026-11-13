@@ -50,14 +50,40 @@ document.querySelectorAll('.gallery').forEach(function (gallery) {
 const imageDialog = document.querySelector('#image-dialog');
 if (imageDialog) {
   const enlargedImage = imageDialog.querySelector('img');
+  let activeGallery;
   document.querySelectorAll('.image-enlarge').forEach(function (button) {
     button.hidden = false;
     button.addEventListener('click', function () {
-      const image = button.closest('.gallery').querySelector('.gallery-main');
+      activeGallery = button.closest('.gallery');
+      const image = activeGallery.querySelector('.gallery-main');
       enlargedImage.src = image.src;
       enlargedImage.alt = image.alt;
       imageDialog.showModal();
     });
+  });
+
+  // Pilene vælger næste/forrige miniature og opdaterer også billedet bag vinduet.
+  function changeImage(direction) {
+    const buttons = Array.from(activeGallery.querySelectorAll('.gallery-thumbnails button'));
+    let index = buttons.findIndex(function (button) {
+      return button.getAttribute('aria-pressed') === 'true';
+    });
+    index += direction;
+    if (index < 0) index = buttons.length - 1;
+    if (index >= buttons.length) index = 0;
+    buttons[index].click();
+    const image = activeGallery.querySelector('.gallery-main');
+    enlargedImage.src = image.src;
+    enlargedImage.alt = image.alt;
+  }
+
+  imageDialog.querySelector('.image-previous').addEventListener('click', function () { changeImage(-1); });
+  imageDialog.querySelector('.image-next').addEventListener('click', function () { changeImage(1); });
+  imageDialog.addEventListener('keydown', function (event) {
+    if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+      event.preventDefault();
+      changeImage(event.key === 'ArrowLeft' ? -1 : 1);
+    }
   });
 
   // Klik på den mørke baggrund lukker også billedet.

@@ -145,17 +145,14 @@ h2 { font-size: clamp(2rem, 4vw, 3.4rem); letter-spacing: -.045em; }
 /* SPOTIFY: Samme maksimale bredde som projektvideoerne. Højden er uændret. */
 #songs iframe { width: 100%; max-width: 560px; }
 
-/* PROJEKTMENU: Over projekterne på mobil og i højre side på store skærme. */
-.project-menu { display: flex; flex-wrap: wrap; gap: 10px 20px; margin-bottom: 30px; }
-.project-menu .section-label { width: 100%; }
-.project-menu a { font-size: .85rem; text-decoration: none; }
+/* PROJEKTMENU: En kompakt række over indholdet følger med, når man scroller.
+   På mobil ombrydes navnene til flere linjer. */
+.project-menu { position: sticky; top: 0; z-index: 2; display: flex; flex-wrap: wrap; gap: 8px 24px; max-width: 900px; margin: 0 auto 30px; padding: 14px 0; border-bottom: 1px solid #d9d9cf; background: #f8f6f1; }
+.project-menu a { font-size: .85rem; text-decoration: none; padding-block: 4px; }
 .project-menu a:hover, .project-menu a:focus-visible { color: #b94325; text-decoration: underline; }
 .project-sections { min-width: 0; }
-@media (min-width: 1100px) {
-  .projects-layout { display: grid; grid-template-columns: minmax(0, 1fr) 180px; gap: 40px; }
-  .project-menu { grid-column: 2; grid-row: 1; position: sticky; top: 24px; align-self: start; flex-direction: column; padding-left: 20px; border-left: 1px solid #d9d9cf; }
-  .project-sections { grid-column: 1; grid-row: 1; }
-}
+/* Giv plads til menuen, når et kategorilink vælges. */
+.project-detail { scroll-margin-top: 100px; }
 
 /* FORSTØRRELSE: Ikon i hjørnet og et stort billede oven på siden. */
 .gallery-preview { position: relative; }
@@ -167,3 +164,9 @@ h2 { font-size: clamp(2rem, 4vw, 3.4rem); letter-spacing: -.045em; }
 .enlarged-image { width: auto; max-width: 100%; height: auto; max-height: calc(94vh - 90px); object-fit: contain; }
 /* Stop baggrundens scroll, mens billedet er åbent. */
 body:has(.image-dialog[open]) { overflow: hidden; }
+
+/* PILE: Ligger oven på hver side af det forstørrede billede. */
+.image-viewer { position: relative; }
+.image-arrow { position: absolute; top: 50%; transform: translateY(-50%); display: grid; place-items: center; width: 44px; height: 48px; padding: 0; border: 1px solid white; border-radius: 6px; background: rgb(36 38 32 / 80%); color: white; font-size: 1.4rem; }
+.image-previous { left: 8px; }
+.image-next { right: 8px; }
