@@ -147,10 +147,12 @@ h2 { font-size: clamp(2rem, 4vw, 3.4rem); letter-spacing: -.045em; }
 
 /* PROJEKTMENU: En kompakt række over indholdet følger med, når man scroller.
    På mobil ombrydes navnene til flere linjer. */
-.project-menu { position: sticky; top: 0; z-index: 2; display: flex; flex-wrap: wrap; gap: 8px 24px; max-width: 900px; margin: 0 auto 30px; padding: 14px 0; border-bottom: 1px solid #d9d9cf; background: #f8f6f1; }
+.project-menu { position: sticky; top: 0; z-index: 2; display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 24px; max-width: 900px; margin: 0 auto 30px; padding: 14px 0; border-bottom: 1px solid #d9d9cf; background: #f8f6f1; }
 .project-menu a { font-size: .85rem; text-decoration: none; padding-block: 4px; }
 .project-menu a:hover, .project-menu a:focus-visible { color: #b94325; text-decoration: underline; }
 .project-sections { min-width: 0; }
+/* Menuens bundstreg erstatter stregen over det første projekt. */
+.project-sections > .project-detail:first-child { border-top: 0; }
 /* Giv plads til menuen, når et kategorilink vælges. */
 .project-detail { scroll-margin-top: 100px; }
 
