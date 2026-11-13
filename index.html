@@ -17,7 +17,7 @@
     <button class="menu-button" type="button" aria-controls="navigation" aria-expanded="false" hidden>Menu <span aria-hidden="true">☰</span></button>
     <nav id="navigation" aria-label="Hovednavigation">
       <a href="index.html#forside">Home</a>
-      <a href="projekter.html#projekter">Projects</a>
+      <a href="projekter.html">Projects</a>
       <a href="#om-mig">About me</a>
       <a href="#kontakt">Contact me<span aria-hidden="true"> →</span></a>
     </nav>
@@ -46,7 +46,7 @@
       -->
     </section>
 
-    <!-- PROJEKTER: Forsiden viser tre udvalgte projekter. Resten kan tilføjes i projekter.html. -->
+    <!-- PROJEKTER: Hvert kort linker til sin egen sektion i projekter.html. -->
     <section class="projects container section-space" id="projekter" aria-labelledby="projects-title">
       <div class="section-heading"><div><p class="eyebrow">Some of my proudest work.</p><h2 id="projects-title">Films. Music. <span class="serif">Creativity.</span></h2></div></div>
       <div class="project-grid">
@@ -76,6 +76,25 @@
           <div class="project-meta"><span>Music</span><span>03</span></div>
           <h3>Music productions</h3>
           <p>Several music productions made by me. Made in FL Studio.</p>
+        </article>
+        <!-- NYE KATEGORIER: Udskift pladsholderen med et billede, når det er klar. -->
+        <article class="project-card">
+          <a class="project-link" href="projekter.html#songs" aria-label="Learn more about my songs">
+            <img src="assets/music_screenshot1.jpg" alt="Cover image for my songs" width="800" height="600" loading="lazy">
+            <span class="project-overlay">Learn more</span>
+          </a>
+          <div class="project-meta"><span>Songs</span><span>04</span></div>
+          <h3>Song Projects</h3>
+          <p>Albums, EPs and singles.</p>
+        </article>
+        <article class="project-card">
+          <a class="project-link" href="projekter.html#literary-works" aria-label="Learn more about my literary works">
+            <span class="project-placeholder serif">Literary works</span>
+            <span class="project-overlay">Learn more</span>
+          </a>
+          <div class="project-meta"><span>Writing</span><span>05</span></div>
+          <h3>Literary works</h3>
+          <p>Coming soon.</p>
         </article>
       </div>
       <a class="more-link" href="projekter.html">See more <span aria-hidden="true">→</span></a>

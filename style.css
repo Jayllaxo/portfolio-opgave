@@ -63,6 +63,8 @@ h2 { font-size: clamp(2rem, 4vw, 3.4rem); letter-spacing: -.045em; }
 .section-heading .eyebrow { margin-bottom: 14px; }
 .section-heading > p { color: var(--muted); font-size: .85rem; }
 .project-grid { display: grid; gap: 36px 24px; }
+/* Pladsholderen har samme størrelse som kortenes billeder. */
+.project-placeholder { display: grid; place-items: center; aspect-ratio: 4 / 3; background: var(--soft-green); font-size: 2rem; }
 .project-card img { aspect-ratio: 4 / 3; object-fit: cover; }
 .project-card video { width: 100%; aspect-ratio: 4 / 3; background: var(--text); }
 .project-meta { display: flex; justify-content: space-between; margin-block: 17px 10px; font-size: .65rem; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); }
