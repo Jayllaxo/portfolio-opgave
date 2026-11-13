@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Johan Øjvind Skaarup – multimediedesignerstuderende på Zealand. Portfolio med showreel og fremvisning af tidligere og nuværende projekter.">
+  <title>About me · Johan Øjvind Skaarup</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#indhold">Spring til indhold</a>
+
+  <!-- HEADER: Navnet og navigationen går igen på alle skærmstørrelser. -->
+  <header class="site-header container">
+    <a class="logo" href="index.html" aria-label="Johan Øjvind Skaarup, til forsiden">JS<span aria-hidden="true">✳︎</span></a>
+    <button class="menu-button" type="button" aria-controls="navigation" aria-expanded="false" hidden>Menu <span aria-hidden="true">☰</span></button>
+    <nav id="navigation" aria-label="Hovednavigation">
+      <a href="index.html#forside">Home</a>
+      <a href="projekter.html">Projects</a>
+      <a href="om-mig.html" aria-current="page">About me</a>
+      <a href="#kontakt">Contact me<span aria-hidden="true"> →</span></a>
+    </nav>
+  </header>
+
+  <main id="indhold">
+    <!-- OM MIG: Tilpas teksten, så den afspejler dig og dine kompetencer. -->
+    <section class="about section-space" id="om-mig" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <img class="portrait-image" src="assets/portraet.png" alt="Pladsholder til Johans portræt – her kan dit eget billede komme">
+        <div class="about-copy"><p class="section-label">A little about me</p><h1 class="about-heading" id="about-title">Hi, my name is...<br></h1><p>Hi, my name is Johan Oejvind Skaarup and I'm 25 years old. The best way I can describe myself is that besides oxygen, I depend on creativity to live. It's a constant need for me - to create something.</p><p>Currently, I'm studying Multimediadesign at Zealand. Before that I studied Humanism/Journalism at Roskilde University and went to the film school KBH Film- & Fotoskole. </p><p>Besides jobs to pay bills, universities and schools, I've been a filmmaker, writer, social media manager, lyricist, YouTuber, editor, freelancer and a lot more.</p><p>What I'm currently working on includes a 2D survival horror video game, writing my next rap album and music production for both projects.</p><ul class="skills" aria-label="Portfolioens fagområder"><li>Webdesign</li><li>Visual design</li><li>HTML, CSS &amp; JavaScript</li><li>Music production</li><li>Video production</li><li>Filmmaking</li><li>Video games</li><li>Editing</li><li>SoMe management</li><li>Writing</li><li>Lyrics</li><li>Photo editing</li><li>Photo shooting</li><li>Tech & IT</li><li>AI assistance</li></ul></div>
+      </div>
+    </section>
+
+    <!-- KONTAKT: mailto åbner brugerens mailprogram; der indsamles ingen data. -->
+    <section class="contact container section-space" id="kontakt" aria-labelledby="contact-title">
+      <p class="section-label">Interested in working together?</p><h2 id="contact-title">Contact me below<br><span class="italic-heading">and let's create!</span></h2><a class="contact-link" href="mailto:skaarnet@gmail.com">skaarnet@gmail.com <span aria-hidden="true">→</span></a>
+    </section>
+  </main>
+  <footer class="site-footer container"><p>© Johan Oejvind Skaarup</p><p>Designed &amp; coded by me.</p><a href="#indhold">To the top ↑</a></footer>
+</body>
+</html>
