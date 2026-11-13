@@ -29,23 +29,6 @@ document.addEventListener('keydown', function (event) {
   }
 });
 
-// GALLERI: Et klik på et miniaturebillede skifter det store billede.
-document.querySelectorAll('.gallery').forEach(function (gallery) {
-  const mainImage = gallery.querySelector('.gallery-main');
-  const buttons = gallery.querySelectorAll('button');
-
-  buttons.forEach(function (button) {
-    button.addEventListener('click', function () {
-      const image = button.querySelector('img');
-      mainImage.src = image.src;
-      mainImage.alt = image.alt;
-      buttons.forEach(function (otherButton) {
-        otherButton.setAttribute('aria-pressed', String(otherButton === button));
-      });
-    });
-  });
-});
-
 // MUSIK: Den store knap og browserens lydafspiller styrer den samme lydfil.
 document.querySelectorAll('.music-player').forEach(function (player) {
   const audio = player.querySelector('audio');

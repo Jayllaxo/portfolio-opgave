@@ -25,116 +25,98 @@
 
   <main id="indhold" class="container section-space">
     <h1>My <span class="serif">projects.</span></h1>
-    <!-- FILM: Læg din film i assets som short-film.mp4.
-         Fjern derefter kommentartegnene omkring source-linjen i video nedenfor.
-         Ret også teksten "Film coming soon", når filmen er tilføjet. -->
+    <!-- VIDEOER: Fælles størrelse styres af .project-video i CSS. -->
     <article class="project-detail" id="short-film" aria-labelledby="film-title">
       <div class="project-meta"><span>Videos</span><span>01</span></div>
       <h2 id="film-title">Video Projects</h2>
-      <h3 id="film-title">Short film (2022)</h3>
+      <h3>Short film (2022)</h3>
       <p>Edited, produced and filmed by me. Shown in Grand Teater. Made at KBH Film- &amp; Fotoskole.</p>
       <iframe
               src="https://www.youtube.com/embed/gR9DuiSQd-U"
               title="Short film"
-              style="display: block; width: 100%; aspect-ratio: 16 / 9; border: 0;"
+              class="project-video"
               allow="fullscreen; picture-in-picture"
               allowfullscreen>
       </iframe>
-      <h3 id="film-title" style="padding-top: 30px">Music video (2026)</h3>
+      <h3>Music video (2026)</h3>
       <p>Edited and filmed by me. Made at Zealand Academy. </p>
       <iframe
             src="https://www.youtube.com/embed/u-NkB28v0qY"
             title="Music video 1"
-            style="display: block; width: 100%; aspect-ratio: 16 / 9; border: 0;"
+            class="project-video"
             allow="fullscreen; picture-in-picture"
             allowfullscreen>
       </iframe>
-      <h3 id="film-title" style="padding-top: 30px">Music video (2024)</h3>
+      <h3>Music video (2024)</h3>
       <p>Everything made by me. Made in free time.</p>
       <iframe
               src="https://www.youtube.com/embed/NEI-khidC9Q"
               title="Music video 2"
-              style="display: block; width: 100%; aspect-ratio: 16 / 9; border: 0;"
+              class="project-video"
               allow="fullscreen; picture-in-picture"
               allowfullscreen>
       </iframe>
-      <h3 id="film-title" style="padding-top: 30px">Music video (2024)</h3>
+      <h3>Music video (2024)</h3>
       <p>Everything made by me. Made in free time.</p>
       <iframe
               src="https://www.youtube.com/embed/Vc0MIMvSjts"
               title="Music video 3"
-              style="display: block; width: 100%; aspect-ratio: 16 / 9; border: 0;"
+              class="project-video"
               allow="fullscreen; picture-in-picture"
               allowfullscreen>
       </iframe>
-      <h3 id="film-title" style="padding-top: 30px">Music video (2024)</h3>
+      <h3>Music video (2024)</h3>
       <p>Everything made by me. Made in free time.</p>
       <iframe
               src="https://www.youtube.com/embed/Tn1qYGP9Io8"
               title="Music video 4"
-              style="display: block; width: 100%; aspect-ratio: 16 / 9; border: 0;"
+              class="project-video"
               allow="fullscreen; picture-in-picture"
               allowfullscreen>
       </iframe>
-      <h3 id="film-title" style="padding-top: 30px">Music video (2023)</h3>
+      <h3>Music video (2023)</h3>
       <p>Everything made by me. Made in free time.</p>
       <iframe
               src="https://www.youtube.com/embed/J1Huv14x8EU"
               title="Music video 5"
-              style="display: block; width: 100%; aspect-ratio: 16 / 9; border: 0;"
+              class="project-video"
               allow="fullscreen; picture-in-picture"
               allowfullscreen>
       </iframe>
-      <h3 id="film-title" style="padding-top: 30px">Music video (2021)</h3>
+      <h3>Music video (2021)</h3>
       <p>Edited, produced and filmed by me. Made in free time.</p>
       <iframe
               src="https://www.youtube.com/embed/_3dJgH7bOWU"
               title="Music video 5"
-              style="display: block; width: 100%; aspect-ratio: 16 / 9; border: 0;"
+              class="project-video"
               allow="fullscreen; picture-in-picture"
               allowfullscreen>
       </iframe>
-      <h3 id="film-title" style="padding-top: 30px">Music video (2020)</h3>
+      <h3>Music video (2020)</h3>
       <p>Edited, produced and filmed by me. Made in free time.</p>
       <iframe
               src="https://www.youtube.com/embed/Ny31Bzy-ugM"
               title="Music video 5"
-              style="display: block; width: 100%; aspect-ratio: 16 / 9; border: 0;"
+              class="project-video"
               allow="fullscreen; picture-in-picture"
               allowfullscreen>
       </iframe>
     </article>
 
-    <!-- SPIL: Det store billede skiftes, når man klikker på et miniaturebillede.
-         Tilføj flere screenshots ved at kopiere en button i gallery-thumbnails.
-         Ret src og alt i den kopierede button til dit nye billede. -->
+    <!-- SPIL: Ét screenshot kræver ikke et galleri med miniatureknapper. -->
     <article class="project-detail" id="video-game" aria-labelledby="game-title">
       <div class="project-meta"><span>Video Games</span><span>02</span></div>
       <h2 id="game-title">Video Game Projects</h2>
-      <h3 id="game-title">A 2D survival horror video game.</h3>
+      <h3>A 2D survival horror video game.</h3>
       <p>An ongoing project being worked on solely by me. Being made in Godot.</p>
-      <div class="gallery">
-        <img class="gallery-main" src="assets/video_game_screenshot1.png" alt="Screenshot from my 2D survival horror game">
-        <div class="gallery-thumbnails" role="group" aria-label="Choose a game screenshot">
-          <button type="button" aria-label="Show game screenshot 1" aria-pressed="true">
-            <img src="assets/video_game_screenshot1.png" alt="Screenshot from my 2D survival horror game">
-          </button>
-          <!-- EKSTRA SCREENSHOT: Tilføj filen i assets og fjern kommentartegnene herunder.
-          <button type="button" aria-label="Show game screenshot 2" aria-pressed="false">
-            <img src="assets/video_game_screenshot2.png" alt="Describe your second game screenshot here">
-          </button>
-          -->
-        </div>
-      </div>
+      <img class="project-image" src="assets/video_game_screenshot1.png" alt="Screenshot from my 2D survival horror game">
     </article>
 
-    <!-- MUSIK: Læg din lydfil i assets som music.mp3 og fjern kommentartegnene
-         omkring source-linjen. Play-knappen aktiveres, når en source er tilføjet.
-         Den almindelige lydafspiller giver også pause, lydstyrke og mulighed for at spole. -->
+    <!-- MUSIK: Knappen og browserens lydafspiller styrer samme lydfil. -->
     <article class="project-detail" id="music" aria-labelledby="music-title">
       <div class="project-meta"><span>Music</span><span>03</span></div>
       <h2 id="music-title">Music Projects</h2>
-      <h3 id="music-title">Video Game Soundtrack (2026)</h3>
+      <h3>Video Game Soundtrack (2026)</h3>
       <p>Music production by me. Made in FL Studio.</p>
       <div class="music-player">
         <div class="music-cover">
@@ -142,8 +124,9 @@
           <button class="music-play" type="button" aria-label="Play music" disabled>▶︎</button>
         </div>
         <audio controls preload="none" aria-label="My music production">
-          <source src="assets/mp3_files/BGM%20extra%20track%201%20(vers%201).mp3"
+          <source src="assets/mp3_files/BGM%20extra%20track%201%20(vers%201).mp3" type="audio/mpeg">
         </audio>
+        <p class="media-note" role="status"></p>
       </div>
     </article>
 

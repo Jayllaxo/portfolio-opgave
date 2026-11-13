@@ -120,21 +120,17 @@ h2 { font-size: clamp(2rem, 4vw, 3.4rem); letter-spacing: -.045em; }
 /* På touchskærme vises teksten altid, fordi man ikke kan hover. */
 @media (hover: none) { .project-overlay { opacity: 1; background: rgb(40 40 40 / 35%); } }
 
-/* PROJEKTSIDEN: Hvert projekt får plads til tekst og større billeder/video. */
+/* PROJEKTSIDEN: Mindre medier reducerer scrolling uden at ændre tekstbredden. */
 .project-detail { max-width: 900px; margin: 0 auto 70px; padding-top: 30px; border-top: 1px solid var(--line); }
 .project-detail h2 { margin-bottom: 20px; }
 .project-detail > p { max-width: 650px; margin-bottom: 24px; color: var(--muted); }
-.project-detail video { display: block; width: 100%; aspect-ratio: 16 / 9; background: var(--text); }
+.project-video { display: block; width: 100%; max-width: 560px; aspect-ratio: 16 / 9; border: 0; }
+#short-film h3:not(:first-of-type) { padding-top: 30px; }
+.project-image { max-width: 560px; height: auto; }
 .media-note { font-size: .85rem; color: var(--muted); margin-top: 12px; }
 
-/* GALLERI: Miniaturebillederne kan skifte det store billede. */
-.gallery-main { aspect-ratio: 16 / 9; object-fit: contain; background: var(--text); }
-.gallery-thumbnails { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 12px; }
-.gallery-thumbnails button { width: 110px; padding: 3px; border: 2px solid transparent; background: transparent; }
-.gallery-thumbnails button[aria-pressed="true"] { border-color: var(--accent); }
-.gallery-thumbnails img { aspect-ratio: 16 / 9; object-fit: cover; }
-
 /* MUSIK: Play/pause oven på billedet. Browserens egen afspiller står under det. */
+.music-player { max-width: 400px; }
 .music-cover { position: relative; }
 .music-play { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 70px; height: 70px; border: 1px solid white; border-radius: 50%; background: rgb(40 40 40 / 80%); color: white; font-size: 1.6rem; }
 .music-play:disabled { opacity: .65; cursor: default; }
