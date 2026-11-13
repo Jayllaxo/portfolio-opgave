@@ -126,8 +126,16 @@ h2 { font-size: clamp(2rem, 4vw, 3.4rem); letter-spacing: -.045em; }
 .project-detail > p { max-width: 650px; margin-bottom: 24px; color: var(--muted); }
 .project-video { display: block; width: 100%; max-width: 560px; aspect-ratio: 16 / 9; border: 0; }
 #short-film h3:not(:first-of-type) { padding-top: 30px; }
-.project-image { max-width: 560px; height: auto; }
 .media-note { font-size: .85rem; color: var(--muted); margin-top: 12px; }
+
+/* Galleriet beholder den mindre bredde, også når flere billeder tilføjes. */
+.gallery { max-width: 560px; }
+/* GALLERI: Miniaturebillederne kan skifte det store billede. */
+.gallery-main { aspect-ratio: 16 / 9; object-fit: contain; background: var(--text); }
+.gallery-thumbnails { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 12px; }
+.gallery-thumbnails button { width: 110px; padding: 3px; border: 2px solid transparent; background: transparent; }
+.gallery-thumbnails button[aria-pressed="true"] { border-color: var(--accent); }
+.gallery-thumbnails img { aspect-ratio: 16 / 9; object-fit: cover; }
 
 /* MUSIK: Play/pause oven på billedet. Browserens egen afspiller står under det. */
 .music-player { max-width: 400px; }
