@@ -48,11 +48,13 @@ document.querySelectorAll('.gallery').forEach(function (gallery) {
     currentImage = number;
 
     const image = thumbnails[number].querySelector('img');
-    mainImage.src = image.src;
+    // Fotografier har en lille miniature og en større webversion.
+    const fullImage = image.dataset.full || image.src;
+    mainImage.src = fullImage;
     // Beskrivelsen står på knappen, mens miniaturebilledet har tom alt-tekst.
     const description = thumbnails[number].getAttribute('aria-label').replace('Show image: ', '');
     mainImage.alt = description;
-    enlargedImage.src = image.src;
+    enlargedImage.src = fullImage;
     enlargedImage.alt = description;
 
     thumbnails.forEach(function (button, index) {
