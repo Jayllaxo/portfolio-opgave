@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Johan Øjvind Skaarup – multimediedesignerstuderende på Zealand. Portfolio med showreel og fremvisning af tidligere og nuværende projekter.">
+  <meta name="description" content="Johan Oejvind Skaarup – multimedia design student at Zealand. Explore my films, photography, games, music, writing and design projects.">
   <title>Projects · Johan Oejvind Skaarup</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#indhold">Spring til indhold</a>
+  <a class="skip-link" href="#indhold">Skip to content</a>
 
 
   <header class="site-header container">
-    <a class="logo" href="index.html" aria-label="Johan Øjvind Skaarup, til forsiden">JS<span aria-hidden="true">✳︎</span></a>
+    <a class="logo" href="index.html" aria-label="JS – Johan Oejvind Skaarup, home">JS<span aria-hidden="true">✳︎</span></a>
     <button class="menu-button" type="button" aria-controls="navigation" aria-expanded="false" hidden>Menu <span aria-hidden="true">☰</span></button>
-    <nav id="navigation" aria-label="Hovednavigation">
+    <nav id="navigation" aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="projekter.html" aria-current="page">Projects</a>
       <a href="om-mig.html">About me</a>
@@ -30,6 +30,7 @@
     <div class="projects-layout">
       <nav class="project-menu" aria-label="Project categories">
         <a href="#short-film">Video &amp; Film</a>
+        <a href="#photography">Photography</a>
         <a href="#video-game">Video Games</a>
         <a href="#music">Music</a>
         <a href="#songs">Songs</a>
@@ -45,7 +46,7 @@
       <p>Edited, produced and filmed by me. Shown in Grand Teater. Made in Premiere Pro and at KBH Film- &amp; Fotoskole.</p>
       <iframe
               src="https://www.youtube.com/embed/gR9DuiSQd-U"
-              title="Short film"
+              title="Short film (2022)"
               class="project-video"
               allow="fullscreen; picture-in-picture"
               allowfullscreen>
@@ -54,7 +55,7 @@
       <p>Edited and filmed by me. Made in Premiere Pro and at Zealand Academy. </p>
       <iframe
             src="https://www.youtube.com/embed/u-NkB28v0qY"
-            title="Music video 1"
+            title="Music video (2026)"
             class="project-video"
             allow="fullscreen; picture-in-picture"
             allowfullscreen>
@@ -63,7 +64,7 @@
       <p>Everything made by me. Made in Premiere Pro.</p>
       <iframe
               src="https://www.youtube.com/embed/NEI-khidC9Q"
-              title="Music video 2"
+              title="Music video (2024)"
               class="project-video"
               allow="fullscreen; picture-in-picture"
               allowfullscreen>
@@ -72,7 +73,7 @@
       <p>Everything made by me. Made in Premiere Pro.</p>
       <iframe
               src="https://www.youtube.com/embed/Vc0MIMvSjts"
-              title="Music video 3"
+              title="Music video (2024)"
               class="project-video"
               allow="fullscreen; picture-in-picture"
               allowfullscreen>
@@ -81,7 +82,7 @@
       <p>Everything made by me. Made in Premiere Pro.</p>
       <iframe
               src="https://www.youtube.com/embed/Tn1qYGP9Io8"
-              title="Music video 4"
+              title="Music video (2024)"
               class="project-video"
               allow="fullscreen; picture-in-picture"
               allowfullscreen>
@@ -90,7 +91,7 @@
       <p>Everything made by me. Made in Premiere Pro.</p>
       <iframe
               src="https://www.youtube.com/embed/J1Huv14x8EU"
-              title="Music video 5"
+              title="Music video (2023)"
               class="project-video"
               allow="fullscreen; picture-in-picture"
               allowfullscreen>
@@ -99,7 +100,7 @@
       <p>Edited, produced and filmed by me. Made in Premiere Pro.</p>
       <iframe
               src="https://www.youtube.com/embed/_3dJgH7bOWU"
-              title="Music video 5"
+              title="Music video (2021)"
               class="project-video"
               allow="fullscreen; picture-in-picture"
               allowfullscreen>
@@ -108,7 +109,7 @@
       <p>Edited, produced and filmed by me. Made in Sony Vegas Pro.</p>
       <iframe
               src="https://www.youtube.com/embed/Ny31Bzy-ugM"
-              title="Music video 5"
+              title="Music video (2020)"
               class="project-video"
               allow="fullscreen; picture-in-picture"
               allowfullscreen>
@@ -116,14 +117,81 @@
     </article>
 
 
+    <!-- FOTOGRAFI: Hvert album har sit eget galleri og sin egen dialog. -->
+    <article class="project-detail" id="photography" aria-labelledby="photography-title">
+      <div class="project-meta"><span>Photography</span><span>02</span></div>
+      <h2 id="photography-title">Photography Projects</h2>
+      <h3 class="photo-album-title">Photo Album (2026)</h3>
+      <p>Photos coming soon. The image below is a temporary placeholder.</p>
+      <!-- Erstat billedstien og alt-teksten i både det store billede og miniaturebilledet.
+           Kopiér en miniatureknap for at tilføje flere billeder til dette album. -->
+      <div class="gallery">
+        <div class="gallery-preview">
+        <img class="gallery-main" src="assets/project_pics_files/cv_4.png" alt="Temporary portrait photo for the 2026 album">
+          <!-- Ikonet åbner det valgte billede stort på samme side. -->
+          <button class="image-enlarge" type="button" aria-label="Enlarge photo from the 2026 album" aria-haspopup="dialog" aria-controls="photo-dialog-2026" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5M3 3l6 6m12-6-6 6M3 21l6-6m12 6-6-6"/>
+            </svg>
+          </button>
+        </div>
+        <div class="gallery-thumbnails" role="group" aria-label="Choose a photo from 2026">
+          <button type="button" aria-label="Show image: Temporary portrait photo for the 2026 album" aria-pressed="true">
+            <img src="assets/project_pics_files/cv_4.png" alt="">
+          </button>
+        </div>
+      </div>
+      <h3 class="photo-album-title">Photo Album (2025)</h3>
+      <p>Photos coming soon. The image below is a temporary placeholder.</p>
+      <!-- Erstat billedstien og alt-teksten i både det store billede og miniaturebilledet.
+           Kopiér en miniatureknap for at tilføje flere billeder til dette album. -->
+      <div class="gallery">
+        <div class="gallery-preview">
+        <img class="gallery-main" src="assets/project_pics_files/cv_4.png" alt="Temporary portrait photo for the 2025 album">
+          <!-- Ikonet åbner det valgte billede stort på samme side. -->
+          <button class="image-enlarge" type="button" aria-label="Enlarge photo from the 2025 album" aria-haspopup="dialog" aria-controls="photo-dialog-2025" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5M3 3l6 6m12-6-6 6M3 21l6-6m12 6-6-6"/>
+            </svg>
+          </button>
+        </div>
+        <div class="gallery-thumbnails" role="group" aria-label="Choose a photo from 2025">
+          <button type="button" aria-label="Show image: Temporary portrait photo for the 2025 album" aria-pressed="true">
+            <img src="assets/project_pics_files/cv_4.png" alt="">
+          </button>
+        </div>
+      </div>
+      <h3 class="photo-album-title">Photo Album (2024)</h3>
+      <p>Photos coming soon. The image below is a temporary placeholder.</p>
+      <!-- Erstat billedstien og alt-teksten i både det store billede og miniaturebilledet.
+           Kopiér en miniatureknap for at tilføje flere billeder til dette album. -->
+      <div class="gallery">
+        <div class="gallery-preview">
+        <img class="gallery-main" src="assets/project_pics_files/cv_4.png" alt="Temporary portrait photo for the 2024 album">
+          <!-- Ikonet åbner det valgte billede stort på samme side. -->
+          <button class="image-enlarge" type="button" aria-label="Enlarge photo from the 2024 album" aria-haspopup="dialog" aria-controls="photo-dialog-2024" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5M3 3l6 6m12-6-6 6M3 21l6-6m12 6-6-6"/>
+            </svg>
+          </button>
+        </div>
+        <div class="gallery-thumbnails" role="group" aria-label="Choose a photo from 2024">
+          <button type="button" aria-label="Show image: Temporary portrait photo for the 2024 album" aria-pressed="true">
+            <img src="assets/project_pics_files/cv_4.png" alt="">
+          </button>
+        </div>
+      </div>
+    </article>
+
+
     <article class="project-detail" id="video-game" aria-labelledby="game-title">
-      <div class="project-meta"><span>Video Games</span><span>02</span></div>
+      <div class="project-meta"><span>Video Games</span><span>03</span></div>
       <h2 id="game-title">Video Game Projects</h2>
       <h3>2D survival horror game (2026-)</h3>
       <p>An ongoing project being worked on solely by me. Being made in Godot.</p>
       <div class="gallery">
         <div class="gallery-preview">
-        <img class="gallery-main" src="assets/project_pics_files/video_game_screenshot6.png" alt="Screenshot from my 2D survival horror game">
+        <img class="gallery-main" src="assets/project_pics_files/video_game_screenshot6.png" alt="Character dialogue beside a bookcase in a dimly lit room">
           <!-- Ikonet åbner det valgte billede stort på samme side. -->
           <button class="image-enlarge" type="button" aria-label="Enlarge screenshot" aria-haspopup="dialog" aria-controls="image-dialog" hidden>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -132,26 +200,26 @@
           </button>
         </div>
         <div class="gallery-thumbnails" role="group" aria-label="Choose a game screenshot">
-          <button type="button" aria-label="Show game screenshot 1" aria-pressed="true">
-            <img src="assets/project_pics_files/video_game_screenshot6.png" alt="Screenshot from my 2D survival horror game">
+          <button type="button" aria-label="Show image: Character dialogue beside a bookcase in a dimly lit room" aria-pressed="true">
+            <img src="assets/project_pics_files/video_game_screenshot6.png" alt="">
           </button>
-          <button type="button" aria-label="Show game screenshot 2" aria-pressed="false">
-            <img src="assets/project_pics_files/video_game_screenshot7.png" alt="Screenshot from my 2D survival horror game">
+          <button type="button" aria-label="Show image: Character in a warmly lit kitchen in the survival horror game" aria-pressed="false">
+            <img src="assets/project_pics_files/video_game_screenshot7.png" alt="">
           </button>
-          <button type="button" aria-label="Show game screenshot 3" aria-pressed="false">
-            <img src="assets/project_pics_files/video_game_screenshot5.png" alt="Screenshot from my 2D survival horror game">
+          <button type="button" aria-label="Show image: Game inventory showing a selected piece of sterilized cloth" aria-pressed="false">
+            <img src="assets/project_pics_files/video_game_screenshot5.png" alt="">
           </button>
-          <button type="button" aria-label="Show game screenshot 4" aria-pressed="false">
-            <img src="assets/project_pics_files/video_game_screenshot4.png" alt="Screenshot from my 2D survival horror game">
+          <button type="button" aria-label="Show image: Interior game level with furniture and lighting in the Godot editor" aria-pressed="false">
+            <img src="assets/project_pics_files/video_game_screenshot4.png" alt="">
           </button>
-          <button type="button" aria-label="Show game screenshot 5" aria-pressed="false">
-            <img src="assets/project_pics_files/video_game_screenshot3.png" alt="Screenshot from my 2D survival horror game">
+          <button type="button" aria-label="Show image: Forest level with rows of trees in the Godot editor" aria-pressed="false">
+            <img src="assets/project_pics_files/video_game_screenshot3.png" alt="">
           </button>
-          <button type="button" aria-label="Show game screenshot 6" aria-pressed="false">
-            <img src="assets/project_pics_files/video_game_screenshot2.png" alt="Screenshot from my 2D survival horror game">
+          <button type="button" aria-label="Show image: Side-scrolling level layout in the Godot editor" aria-pressed="false">
+            <img src="assets/project_pics_files/video_game_screenshot2.png" alt="">
           </button>
-          <button type="button" aria-label="Show game screenshot 7" aria-pressed="false">
-            <img src="assets/video_game_screenshot1.png" alt="Screenshot from my 2D survival horror game">
+          <button type="button" aria-label="Show image: House interior level in the Godot editor" aria-pressed="false">
+            <img src="assets/video_game_screenshot1.png" alt="">
           </button>
         </div>
       </div>
@@ -159,83 +227,75 @@
 
 
     <article class="project-detail" id="music" aria-labelledby="music-title">
-      <div class="project-meta"><span>Music</span><span>03</span></div>
+      <div class="project-meta"><span>Music</span><span>04</span></div>
       <h2 id="music-title">Music Projects</h2>
       <h3>Video Game Soundtrack (2026)</h3>
       <p>Produced by me. Made in FL Studio.</p>
       <div class="music-player">
-        <audio controls preload="none" aria-label="My music production">
+        <audio controls preload="none" aria-label="Video Game Soundtrack (2026), track 1">
           <source src="assets/mp3_files/soundtrack_%201.mp3" type="audio/mpeg">
         </audio>
-        <p class="media-note" role="status"></p>
       </div>
       <h3>Video Game Soundtrack (2026)</h3>
       <p>Produced by me. Made in FL Studio.</p>
       <div class="music-player">
-        <audio controls preload="none" aria-label="My music production">
+        <audio controls preload="none" aria-label="Video Game Soundtrack (2026), track 2">
           <source src="assets/mp3_files/soundtrack_%202.mp3" type="audio/mpeg">
         </audio>
-        <p class="media-note" role="status"></p>
       </div>
       <h3>Video Game Soundtrack (2026)</h3>
       <p>Produced by me. Made in FL Studio.</p>
       <div class="music-player">
-        <audio controls preload="none" aria-label="My music production">
+        <audio controls preload="none" aria-label="Video Game Soundtrack (2026), track 3">
           <source src="assets/mp3_files/soundtrack_%203.mp3" type="audio/mpeg">
         </audio>
-        <p class="media-note" role="status"></p>
       </div>
       <h3>Video Game Soundtrack (2026)</h3>
       <p>Produced by me. Made in FL Studio.</p>
       <div class="music-player">
-        <audio controls preload="none" aria-label="My music production">
+        <audio controls preload="none" aria-label="Video Game Soundtrack (2026), track 4">
           <source src="assets/mp3_files/soundtrack_%204.mp3" type="audio/mpeg">
         </audio>
-        <p class="media-note" role="status"></p>
       </div>
       <h3>Video Game Soundtrack (2025)</h3>
         <p>Produced by me. Made in FL Studio.</p>
         <div class="music-player">
-          <audio controls preload="none" aria-label="My music production">
+          <audio controls preload="none" aria-label="Video Game Soundtrack (2025), track 5">
             <source src="assets/mp3_files/BGM%20extra%20track%201%20(vers%201).mp3" type="audio/mpeg">
           </audio>
-          <p class="media-note" role="status"></p>
         </div>
         <h3 style="padding-top: 30px">Video Game Soundtrack (2025)</h3>
         <p>Produced by me. Made in FL Studio.</p>
         <div class="music-player">
-          <audio controls preload="none" aria-label="My music production">
+          <audio controls preload="none" aria-label="Video Game Soundtrack (2025), track 6">
             <source src="assets/mp3_files/BGM%20chill%201%20(vers%203).mp3" type="audio/mpeg">
           </audio>
-          <p class="media-note" role="status"></p>
         </div>
         <h3 style="padding-top: 30px">Video Game Soundtrack (2025)</h3>
         <p>Produced by me. Made in FL Studio.</p>
         <div class="music-player">
-          <audio controls preload="none" aria-label="My music production">
+          <audio controls preload="none" aria-label="Video Game Soundtrack (2025), track 7">
             <source src="assets/mp3_files/BGM%20intense%201%20(vers%202).mp3" type="audio/mpeg">
           </audio>
-          <p class="media-note" role="status"></p>
         </div>
         <h3 style="padding-top: 30px">Video Game Soundtrack (2025)</h3>
         <p>Produced by me. Made in FL Studio.</p>
         <div class="music-player">
-          <audio controls preload="none" aria-label="My music production">
+          <audio controls preload="none" aria-label="Video Game Soundtrack (2025), track 8">
             <source src="assets/mp3_files/BGM%20track%20full%20version.mp3" type="audio/mpeg">
           </audio>
-          <p class="media-note" role="status"></p>
         </div>
     </article>
 
 
     <article class="project-detail" id="songs" aria-labelledby="songs-title">
-      <div class="project-meta"><span>Songs</span><span>04</span></div>
+      <div class="project-meta"><span>Songs</span><span>05</span></div>
       <h2 id="songs-title">Song Projects</h2>
       <h3>Album (2025)</h3>
       <p>Written, performed and mixed/mastered by me. Made in FL Studio.</p>
         <iframe
                 src="https://open.spotify.com/embed/album/4FwwxKR7uFjbhaSWUs9HvF"
-                title="My album on Spotify"
+                title="Album (2025)"
                 width="100%"
                 height="352"
                 style="border: 0; border-radius: 12px;"
@@ -246,7 +306,7 @@
       <p>Written, performed and mixed/mastered by me. Made in FL Studio.</p>
       <iframe
               src="https://open.spotify.com/embed/album/4743Lo8I3kbLWty8aRvEwu"
-              title="My album on Spotify"
+              title="Album (2024)"
               width="100%"
               height="352"
               style="border: 0; border-radius: 12px;"
@@ -257,7 +317,7 @@
       <p>Written, performed and mixed/mastered by me. Made in FL Studio.</p>
       <iframe
               src="https://open.spotify.com/embed/album/0BZowvHn0KdMDwEneVPIa7"
-              title="My album on Spotify"
+              title="EP (2024)"
               width="100%"
               height="352"
               style="border: 0; border-radius: 12px;"
@@ -268,7 +328,7 @@
       <p>Co-written and co-performed by me. Made in FL Studio.</p>
       <iframe
               src="https://open.spotify.com/embed/album/5atRVongVOhxmMBGNLSzX3"
-              title="My album on Spotify"
+              title="Single (2024)"
               width="100%"
               height="352"
               style="border: 0; border-radius: 12px;"
@@ -279,7 +339,7 @@
       <p>Written, performed and mixed/mastered by me. Made in FL Studio.</p>
       <iframe
               src="https://open.spotify.com/embed/album/5or7r7O8xRoyno66Wh4vJz"
-              title="My album on Spotify"
+              title="Single (2023)"
               width="100%"
               height="352"
               style="border: 0; border-radius: 12px;"
@@ -290,7 +350,7 @@
       <p>Written, performed and mixed/mastered by me. Made in FL Studio.</p>
       <iframe
               src="https://open.spotify.com/embed/album/4iG3htOZijnujGn2Mxz0Zn"
-              title="My album on Spotify"
+              title="Single (2023)"
               width="100%"
               height="352"
               style="border: 0; border-radius: 12px;"
@@ -301,7 +361,7 @@
       <p>Written, performed and mixed/mastered by me. Made in FL Studio.</p>
       <iframe
               src="https://open.spotify.com/embed/album/2L5KnrfuZXrXTiM3uTre3u"
-              title="My album on Spotify"
+              title="Single (2021)"
               width="100%"
               height="352"
               style="border: 0; border-radius: 12px;"
@@ -312,7 +372,7 @@
       <p>Co-written, co-performed and co-mixed/mastered by me. Made in FL Studio.</p>
       <iframe
               src="https://open.spotify.com/embed/album/3dKDWthG3zKNQKlmTKlVCs"
-              title="My album on Spotify"
+              title="Single (2021)"
               width="100%"
               height="352"
               style="border: 0; border-radius: 12px;"
@@ -323,7 +383,7 @@
       <p>Co-written by me. Made in FL Studio.</p>
       <iframe
               src="https://open.spotify.com/embed/album/1EW9DTsgWo8e676HcbVbt3"
-              title="My album on Spotify"
+              title="Single (2021)"
               width="100%"
               height="352"
               style="border: 0; border-radius: 12px;"
@@ -334,7 +394,7 @@
       <p>Co-written and co-performed by me. Made in FL Studio.</p>
       <iframe
               src="https://open.spotify.com/embed/album/1jH9LHNIvjVU1Vn5vlxy1c"
-              title="My album on Spotify"
+              title="Single (2021)"
               width="100%"
               height="352"
               style="border: 0; border-radius: 12px;"
@@ -345,7 +405,7 @@
       <p>Co-written by me. Made in FL Studio.</p>
       <iframe
               src="https://open.spotify.com/embed/album/6Y6glU78awU1SVfzt9JLw6"
-              title="My album on Spotify"
+              title="Single (2021)"
               width="100%"
               height="352"
               style="border: 0; border-radius: 12px;"
@@ -356,7 +416,7 @@
       <p>Written, performed and mixed/mastered by me. Made in FL Studio.</p>
       <iframe
               src="https://open.spotify.com/embed/album/6h5vpMiQXfJIdvmLV4Gvfu"
-              title="My album on Spotify"
+              title="Single (2020)"
               width="100%"
               height="352"
               style="border: 0; border-radius: 12px;"
@@ -367,7 +427,7 @@
 
 
     <article class="project-detail" id="literary-works" aria-labelledby="literary-title">
-      <div class="project-meta"><span>Writing</span><span>05</span></div>
+      <div class="project-meta"><span>Writing</span><span>06</span></div>
       <h2 id="literary-title">Literary Projects</h2>
       <h3>Amidst A Crashing World (2025-)</h3>
       <p>An ongoing book being written by me. Being made in Microsoft Word.</p>
@@ -386,37 +446,37 @@
 
     <!-- WEB & DESIGN: Kopiér h3, p og link for at tilføje flere websites. -->
     <article class="project-detail" id="web-design" aria-labelledby="web-design-title">
-      <div class="project-meta"><span>SoMe, Web &amp; Design</span><span>06</span></div>
+      <div class="project-meta"><span>SoMe, Web &amp; Design</span><span>07</span></div>
       <h2 id="web-design-title">SoMe, Web &amp; Design Projects</h2>
         <h3>SoMe Management (2026)</h3>
         <p>Co-created by me for a project at Zealand. Managed via Meta Business Suite.</p>
-        <a class="literary-link" href="https://www.instagram.com/the_official_decoria/">Visit the website <span aria-hidden="true">→</span></a>
+        <a class="literary-link" href="https://www.instagram.com/the_official_decoria/">Visit Decoria on Instagram <span aria-hidden="true">→</span></a>
 
         <h3 style="margin-top: 20px">SoMe Management (2026-)</h3>
         <p>Created by me for a client. Managed via TikTok, YouTube and Meta Business Suite.</p>
-        <a class="literary-link" href="https://www.instagram.com/lulus.kitchen.official/" target="_blank">Visit the website <span aria-hidden="true">→</span></a>
+        <a class="literary-link" href="https://www.instagram.com/lulus.kitchen.official/" target="_blank" rel="noopener noreferrer">Visit Lulu’s Kitchen on Instagram (opens in a new tab) <span aria-hidden="true">→</span></a>
 
         <h3 style="margin-top: 20px">SoMe Management (2025-)</h3>
         <p>Created by me. Managed via YouTube, TikTok and Meta Business Suite.</p>
-        <a class="literary-link" href="https://www.tiktok.com/@jay_rain_official">Visit the website <span aria-hidden="true">→</span></a>
+        <a class="literary-link" href="https://www.tiktok.com/@jay_rain_official">Visit Jay Rain on TikTok <span aria-hidden="true">→</span></a>
 
         <h3 style="margin-top: 20px">Website (2026)</h3>
         <p>Created by me for first semester exam at Zealand. Made in PhpStorm.</p>
-        <a class="literary-link" href="https://sem1-eksamen-produkt.johanskaarupgames.dk">Visit the website <span aria-hidden="true">→</span></a>
+        <a class="literary-link" href="https://sem1-eksamen-produkt.johanskaarupgames.dk">Visit my first semester exam website <span aria-hidden="true">→</span></a>
 
         <h3 style="margin-top: 20px">Website (2026)</h3>
         <p>Co-created by me for a project at Zealand. Made in PhpStorm.</p>
-        <a class="literary-link" href="https://sem1-tema4.johanskaarupgames.dk">Visit the website <span aria-hidden="true">→</span></a>
+        <a class="literary-link" href="https://sem1-tema4.johanskaarupgames.dk">Visit my Theme 4 website <span aria-hidden="true">→</span></a>
 
         <h3 style="margin-top: 20px">Website (2026)</h3>
         <p>Co-created by me for a project at Zealand. Made in PhpStorm.</p>
-        <a class="literary-link" href="https://sem2-tema2-decoria.johanskaarupgames.dk">Visit the website <span aria-hidden="true">→</span></a>
+        <a class="literary-link" href="https://sem2-tema2-decoria.johanskaarupgames.dk">Visit the Decoria website <span aria-hidden="true">→</span></a>
 
         <h3 style="margin-top: 20px">Design (2024-)</h3>
         <p>Selection of different design work I've made. Made in Figma & Photoshop.</p>
         <div class="gallery">
           <div class="gallery-preview">
-          <img class="gallery-main" src="assets/project_pics_files/decoria_1.jpg" alt="Decoria design">
+          <img class="gallery-main" src="assets/project_pics_files/decoria_1.jpg" alt="Black and white Decoria and Reframe logo concepts">
             <button class="image-enlarge" type="button" aria-label="Enlarge design image" aria-haspopup="dialog" aria-controls="design-dialog" hidden>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                 <path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5M3 3l6 6m12-6-6 6M3 21l6-6m12 6-6-6"/>
@@ -424,29 +484,29 @@
             </button>
           </div>
           <div class="gallery-thumbnails" role="group" aria-label="Choose a design image">
-            <button type="button" aria-label="Show design image 1" aria-pressed="true">
-              <img src="assets/project_pics_files/decoria_1.jpg" alt="Decoria design">
+            <button type="button" aria-label="Show image: Black and white Decoria and Reframe logo concepts" aria-pressed="true">
+              <img src="assets/project_pics_files/decoria_1.jpg" alt="">
             </button>
-            <button type="button" aria-label="Show design image 2" aria-pressed="false">
-              <img src="assets/project_pics_files/decoria_2.png" alt="Decoria design">
+            <button type="button" aria-label="Show image: Decoria flower logo concepts in outline and colour" aria-pressed="false">
+              <img src="assets/project_pics_files/decoria_2.png" alt="">
             </button>
-            <button type="button" aria-label="Show design image 3" aria-pressed="false">
-              <img src="assets/project_pics_files/design_3.png" alt="Decoria design">
+            <button type="button" aria-label="Show image: Six colourful game screen designs" aria-pressed="false">
+              <img src="assets/project_pics_files/design_3.png" alt="">
             </button>
-            <button type="button" aria-label="Show design image 4" aria-pressed="false">
-              <img src="assets/project_pics_files/design_5.png" alt="Decoria design">
+            <button type="button" aria-label="Show image: Red website mockups for desktop and mobile" aria-pressed="false">
+              <img src="assets/project_pics_files/design_5.png" alt="">
             </button>
-            <button type="button" aria-label="Show design image 5" aria-pressed="false">
-              <img src="assets/project_pics_files/design_6.png" alt="Decoria design">
+            <button type="button" aria-label="Show image: Website wireframes for desktop and mobile" aria-pressed="false">
+              <img src="assets/project_pics_files/design_6.png" alt="">
             </button>
-            <button type="button" aria-label="Show design image 6" aria-pressed="false">
-              <img src="assets/project_pics_files/design_7.png" alt="Decoria design">
+            <button type="button" aria-label="Show image: Character sprite sheet with different poses" aria-pressed="false">
+              <img src="assets/project_pics_files/design_7.png" alt="">
             </button>
-            <button type="button" aria-label="Show design image 7" aria-pressed="false">
-              <img src="assets/project_pics_files/design_8.png" alt="Decoria design">
+            <button type="button" aria-label="Show image: Character animation sprite sheet" aria-pressed="false">
+              <img src="assets/project_pics_files/design_8.png" alt="">
             </button>
-            <button type="button" aria-label="Show design image 8" aria-pressed="false">
-              <img src="assets/project_pics_files/design_9.jpg" alt="Decoria design">
+            <button type="button" aria-label="Show image: LK letter design with a colourful photographic fill" aria-pressed="false">
+              <img src="assets/project_pics_files/design_9.jpg" alt="">
             </button>
           </div>
         </div>
@@ -461,7 +521,6 @@
           <h2 id="contact-title">Contact me below<br><span class="italic-heading">and let's create!</span></h2><a class="contact-link" href="mailto:skaarnet@gmail.com">skaarnet@gmail.com <span aria-hidden="true">→</span></a>
     </section>
 
-    <a class="more-link" href="#indhold">← Back to the top</a>
   </main>
   <!-- DIALOG: Browseren håndterer fokus og lukning med Escape. -->
   <dialog class="image-dialog" id="image-dialog" aria-label="Enlarged game screenshot">
@@ -470,6 +529,33 @@
       <button class="image-arrow image-previous" type="button" aria-label="Previous screenshot">❮</button>
       <img class="enlarged-image" alt="">
       <button class="image-arrow image-next" type="button" aria-label="Next screenshot">❯</button>
+    </div>
+  </dialog>
+
+  <dialog class="image-dialog" id="photo-dialog-2026" aria-label="Enlarged photo from 2026">
+    <form method="dialog"><button class="image-close" aria-label="Close enlarged photo">Close ×</button></form>
+    <div class="image-viewer">
+      <button class="image-arrow image-previous" type="button" aria-label="Previous photo">❮</button>
+      <img class="enlarged-image" alt="">
+      <button class="image-arrow image-next" type="button" aria-label="Next photo">❯</button>
+    </div>
+  </dialog>
+
+  <dialog class="image-dialog" id="photo-dialog-2025" aria-label="Enlarged photo from 2025">
+    <form method="dialog"><button class="image-close" aria-label="Close enlarged photo">Close ×</button></form>
+    <div class="image-viewer">
+      <button class="image-arrow image-previous" type="button" aria-label="Previous photo">❮</button>
+      <img class="enlarged-image" alt="">
+      <button class="image-arrow image-next" type="button" aria-label="Next photo">❯</button>
+    </div>
+  </dialog>
+
+  <dialog class="image-dialog" id="photo-dialog-2024" aria-label="Enlarged photo from 2024">
+    <form method="dialog"><button class="image-close" aria-label="Close enlarged photo">Close ×</button></form>
+    <div class="image-viewer">
+      <button class="image-arrow image-previous" type="button" aria-label="Previous photo">❮</button>
+      <img class="enlarged-image" alt="">
+      <button class="image-arrow image-next" type="button" aria-label="Next photo">❯</button>
     </div>
   </dialog>
 

@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Johan Øjvind Skaarup – multimediedesignerstuderende på Zealand. Portfolio med showreel og fremvisning af tidligere og nuværende projekter.">
+  <meta name="description" content="Johan Oejvind Skaarup – multimedia design student at Zealand. Explore my films, photography, games, music, writing and design projects.">
   <title>Johan Øjvind Skaarup · Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#indhold">Spring til indhold</a>
+  <a class="skip-link" href="#indhold">Skip to content</a>
 
   <!-- HEADER: Navnet og navigationen går igen på alle skærmstørrelser. -->
   <header class="site-header container">
-    <a class="logo" href="#forside" aria-label="Johan Øjvind Skaarup, til forsiden">JS<span aria-hidden="true">✳︎</span></a>
+    <a class="logo" href="#forside" aria-label="JS – Johan Oejvind Skaarup, home">JS<span aria-hidden="true">✳︎</span></a>
     <button class="menu-button" type="button" aria-controls="navigation" aria-expanded="false" hidden>Menu <span aria-hidden="true">☰</span></button>
-    <nav id="navigation" aria-label="Hovednavigation">
+    <nav id="navigation" aria-label="Main navigation">
       <a href="index.html#forside">Home</a>
       <a href="projekter.html">Projects</a>
       <a href="om-mig.html">About me</a>
@@ -35,11 +35,11 @@
     <!-- SHOWREEL: Erstat pladsholderen med din egen video. Se README. -->
     <section class="showreel container" id="showreel" aria-labelledby="reel-title">
       <div class="section-top"><p class="section-label">Showreel</p></div>
-      <img class="showreel-image" src="assets/showreel.png" alt="Showreel er på vej. Her kommer min video på 60–90 sekunder." width="2360" height="1080">
+      <img class="showreel-image" src="assets/showreel.png" alt="Showreel coming soon." width="2360" height="1080">
       <!-- Når videoen er klar: Erstat billedet ovenfor med:
       <video class="showreel-video" controls playsinline preload="metadata" poster="assets/showreel.png">
         <source src="assets/showreel.mp4" type="video/mp4">
-        <track kind="captions" src="assets/undertekster.vtt" srclang="da" label="Dansk">
+        <track kind="captions" src="assets/undertekster.vtt" srclang="en" label="Dansk">
         Din browser kan ikke afspille videoen. <a href="assets/showreel.mp4">Hent videoen</a>.
       </video>
       Tilføj selv MP4, poster og eventuelle undertekster, før du bruger eksemplet.
@@ -61,11 +61,20 @@
           <p>All the videos & films I've made or been involved in.</p>
         </article>
         <article class="project-card">
+          <a class="project-link" href="projekter.html#photography" aria-label="Explore my photography albums">
+            <img src="assets/project_pics_files/cv_4.png" alt="Temporary portrait photo for the photography section" width="800" height="600" loading="lazy">
+            <span class="project-overlay">Learn more</span>
+          </a>
+          <div class="project-meta"><span>Photography</span><span>02</span></div>
+          <h3>Photography Projects</h3>
+          <p>Photo albums from 2026, 2025 and 2024. Photos coming soon.</p>
+        </article>
+        <article class="project-card">
           <a class="project-link" href="projekter.html#video-game" aria-label="Learn more about my video game">
             <img src="assets/video_game_screenshot1.png" alt="Screenshot for my video games" width="800" height="600" loading="lazy">
             <span class="project-overlay">Learn more</span>
           </a>
-          <div class="project-meta"><span>Video games</span><span>02</span></div>
+          <div class="project-meta"><span>Video games</span><span>03</span></div>
           <h3>Video Game Projects</h3>
           <p>All the video games I've made or been involved in.</p>
         </article>
@@ -74,7 +83,7 @@
             <img src="assets/music_screenshot1.jpg" alt="Cover image for my music production" width="800" height="600" loading="lazy">
             <span class="project-overlay">Learn more</span>
           </a>
-          <div class="project-meta"><span>Music</span><span>03</span></div>
+          <div class="project-meta"><span>Music</span><span>04</span></div>
           <h3>Music Projects</h3>
           <p>All the music productions I've made or been involved in.</p>
         </article>
@@ -83,7 +92,7 @@
             <img src="assets/project_pics_files/music_2.jpg" alt="Cover image for my songs" width="800" height="600" loading="lazy">
             <span class="project-overlay">Learn more</span>
           </a>
-          <div class="project-meta"><span>Songs</span><span>04</span></div>
+          <div class="project-meta"><span>Songs</span><span>05</span></div>
           <h3>Song Projects</h3>
           <p>All the songs I've made or been involved in.</p>
         </article>
@@ -92,7 +101,7 @@
             <img src="assets/project_pics_files/writing_1.png" alt="Cover image for my writing" width="800" height="600" loading="lazy">
             <span class="project-overlay">Learn more</span>
           </a>
-          <div class="project-meta"><span>Writing</span><span>05</span></div>
+          <div class="project-meta"><span>Writing</span><span>06</span></div>
           <h3>Literary Projects</h3>
           <p>All the literary works I've written or been involved in.</p>
         </article>
@@ -101,7 +110,7 @@
             <img src="assets/project_pics_files/decoria_1.jpg" alt="Decoria design project" width="800" height="600" loading="lazy">
             <span class="project-overlay">Learn more</span>
           </a>
-          <div class="project-meta"><span>Web &amp; Design</span><span>06</span></div>
+          <div class="project-meta"><span>Web &amp; Design</span><span>07</span></div>
           <h3>Web &amp; Design Projects</h3>
           <p>A selection of my websites and design projects.</p>
         </article>
@@ -112,14 +121,14 @@
     <!-- OM MIG: Tilpas teksten, så den afspejler dig og dine kompetencer. -->
     <section class="about section-space" id="om-mig" aria-labelledby="about-title">
       <div class="container about-grid">
-        <img class="portrait-image" src="assets/project_pics_files/cv_4.png" alt="Pladsholder til Johans portræt – her kan dit eget billede komme">
+        <img class="portrait-image" src="assets/project_pics_files/cv_4.png" alt="Portrait of Johan Oejvind Skaarup">
         <div class="about-copy">
           <p class="section-label">A little about me</p>
           <h2 id="about-title">Hi, my name is...<br></h2>
           <p>Hi, my name is Johan Oejvind Skaarup and I'm 25 years old. The best way I can describe myself is that besides oxygen, I depend on creativity to live. It's a constant need for me - to create something.</p>
           <p>Currently, I'm studying Multimediadesign at Zealand. Before that I studied Humanism/Journalism at Roskilde University and went to the film school KBH Film- & Fotoskole. Besides that and jobs to pay bills, I've also been a filmmaker, writer, social media manager, lyricist, YouTuber, editor, freelancer and a lot more.</p>
           <p>What I'm currently working on includes a 2D survival horror video game, writing a music album, writing a book and music production for all three projects.</p>
-          <ul class="skills" aria-label="Portfolioens fagområder"><li>Webdesign</li>
+          <ul class="skills" aria-label="Areas of expertise"><li>Webdesign</li>
             <li>Visual design</li>
             <li>HTML, CSS &amp; JavaScript</li>
             <li>Music production</li>
@@ -144,7 +153,6 @@
           <h2 id="contact-title">Contact me below<br><span class="italic-heading">and let's create!</span></h2><a class="contact-link" href="mailto:skaarnet@gmail.com">skaarnet@gmail.com <span aria-hidden="true">→</span></a>
     </section>
 
-    <a class="more-link" href="#forside" style="margin-bottom: 120px">← Back to the top</a>
   </main>
   <footer class="site-footer container"><p>© Johan Oejvind Skaarup</p>
           <p>Designed &amp; coded by me.</p><a href="#forside">To the top ↑</a></footer>

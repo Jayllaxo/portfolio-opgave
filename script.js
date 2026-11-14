@@ -31,7 +31,7 @@ document.addEventListener('keydown', function (event) {
 
 // GALLERIER: Et nummer holder styr på det valgte billede i hvert galleri.
 // Første billede har nummer 0, andet billede har nummer 1 osv.
-// Den samme kode bruges til både spilbilleder og designbilleder.
+// Den samme kode bruges til spilbilleder, fotografier og designbilleder.
 document.querySelectorAll('.gallery').forEach(function (gallery) {
   const mainImage = gallery.querySelector('.gallery-main');
   const thumbnails = gallery.querySelectorAll('.gallery-thumbnails button');
@@ -49,9 +49,11 @@ document.querySelectorAll('.gallery').forEach(function (gallery) {
 
     const image = thumbnails[number].querySelector('img');
     mainImage.src = image.src;
-    mainImage.alt = image.alt;
+    // Beskrivelsen står på knappen, mens miniaturebilledet har tom alt-tekst.
+    const description = thumbnails[number].getAttribute('aria-label').replace('Show image: ', '');
+    mainImage.alt = description;
     enlargedImage.src = image.src;
-    enlargedImage.alt = image.alt;
+    enlargedImage.alt = description;
 
     thumbnails.forEach(function (button, index) {
       button.setAttribute('aria-pressed', index === currentImage);

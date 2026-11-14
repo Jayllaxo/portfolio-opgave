@@ -38,7 +38,7 @@ img {
 button, a {
   -webkit-tap-highlight-color: transparent;
 }
-a:focus-visible, button:focus-visible, video:focus-visible {
+a:focus-visible, button:focus-visible, video:focus-visible, audio:focus-visible, iframe:focus-visible {
   outline: 3px solid #b94325;
   outline-offset: 6px;
 }
@@ -113,7 +113,7 @@ a:focus-visible, button:focus-visible, video:focus-visible {
   flex-wrap: wrap;
 }
 .site-header nav a {
-  font-size: .75rem;
+  font-size: .9rem;
   text-decoration: none;
   padding-block: 6px;
 }
@@ -153,7 +153,7 @@ h1 .italic-heading {
   margin-bottom: 14px;
 }
 .section-top h2 {
-  font-size: .85rem;
+  font-size: .9rem;
 }
 .showreel-image {
   width: 100%;
@@ -191,7 +191,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   margin-block: 17px 10px;
-  font-size: .65rem;
+  font-size: .9rem;
   text-transform: uppercase;
   letter-spacing: .20em;
   color: #494a47;
@@ -202,7 +202,7 @@ h2 {
 }
 .project-card p {
   color: #424340;
-  font-size: .85rem;
+  font-size: .9rem;
   max-width: 340px;
 }
 
@@ -243,7 +243,7 @@ h2 {
   gap: 8px;
 }
 .skills li {
-  font-size: .7rem;
+  font-size: .9rem;
   border: 1px solid #a3ac96;
   border-radius: 30px;
   padding: 5px 12px;
@@ -272,7 +272,7 @@ h2 {
   flex-direction: column;
   gap: 12px;
   padding-block: 25px;
-  font-size: .7rem;
+  font-size: .9rem;
   color: #424340;
 }
 
@@ -400,11 +400,6 @@ h2 {
 }
 #short-film h3:not(:first-of-type) {
   padding-top: 30px;
-}
-.media-note {
-  font-size: .85rem;
-  color: #424340;
-  margin-top: 12px;
 }
 
 /* Galleriet beholder den mindre bredde, også når flere billeder tilføjes. */
@@ -570,4 +565,9 @@ body:has(.image-dialog[open]) {
 }
 .image-next {
   right: 8px;
+}
+
+/* FOTOALBUM: Luft mellem de forskellige år. */
+.photo-album-title {
+  margin-top: 30px;
 }
