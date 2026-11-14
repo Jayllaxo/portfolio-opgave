@@ -34,6 +34,7 @@
         <a href="#music">Music</a>
         <a href="#songs">Songs</a>
         <a href="#literary-works">Literary Works</a>
+        <a href="#web-design">Web &amp; Design</a>
       </nav>
       <div class="project-sections">
     <!-- VIDEOER: Fælles størrelse styres af .project-video i CSS. -->
@@ -381,6 +382,48 @@
       <p>Written by me. Made in Microsoft Word</p>
       <a class="literary-link" href="assets/literary_works/de-fire-beskeder.pdf">Read De Fire Beskeder (PDF) <span aria-hidden="true">→</span></a>
     </article>
+
+
+    <!-- WEB & DESIGN: Kopiér h3, p og link for at tilføje flere websites. -->
+    <article class="project-detail" id="web-design" aria-labelledby="web-design-title">
+      <div class="project-meta"><span>Web &amp; Design</span><span>06</span></div>
+      <h2 id="web-design-title">Web &amp; Design Projects</h2>
+      <h3>First Semester Exam Project</h3>
+      <p>A website created for my first semester exam.</p>
+      <a class="literary-link" href="https://sem1-eksamen-produkt.johanskaarupgames.dk">Visit the exam project website <span aria-hidden="true">→</span></a>
+
+      <h3>First Semester – Theme 4</h3>
+      <p>A website created for Theme 4 during my first semester.</p>
+      <a class="literary-link" href="https://sem1-tema4.johanskaarupgames.dk">Visit the Theme 4 website <span aria-hidden="true">→</span></a>
+
+      <h3>Decoria – Second Semester, Theme 2</h3>
+      <p>A website created for Theme 2 during my second semester.</p>
+      <a class="literary-link" href="https://sem2-tema2-decoria.johanskaarupgames.dk">Visit the Decoria website <span aria-hidden="true">→</span></a>
+
+      <h3>Decoria</h3>
+      <p>A selection of my design work for Decoria.</p>
+      <div class="gallery">
+        <div class="gallery-preview">
+        <img class="gallery-main" src="assets/project_pics_files/decoria_1.jpg" alt="Decoria design">
+          <!-- Ikonet åbner det valgte billede stort på samme side. -->
+          <button class="image-enlarge" type="button" aria-label="Enlarge design image" aria-haspopup="dialog" aria-controls="design-dialog" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5M3 3l6 6m12-6-6 6M3 21l6-6m12 6-6-6"/>
+            </svg>
+          </button>
+        </div>
+        <!-- Kopiér en knap herunder og ret billedsti, alt-tekst og nummer for at tilføje billeder. -->
+        <div class="gallery-thumbnails" role="group" aria-label="Choose a design image">
+          <button type="button" aria-label="Show design image 1" aria-pressed="true">
+            <img src="assets/project_pics_files/decoria_1.jpg" alt="Decoria design">
+          </button>
+          <button type="button" aria-label="Show design image 2" aria-pressed="false">
+            <img src="assets/project_pics_files/decoria_2.png" alt="Decoria design">
+          </button>
+        </div>
+      </div>
+    </article>
+
       </div>
     </div>
 
@@ -399,6 +442,15 @@
       <button class="image-arrow image-previous" type="button" aria-label="Previous screenshot">❮</button>
       <img class="enlarged-image" alt="">
       <button class="image-arrow image-next" type="button" aria-label="Next screenshot">❯</button>
+    </div>
+  </dialog>
+
+  <dialog class="image-dialog" id="design-dialog" aria-label="Enlarged design image">
+    <form method="dialog"><button class="image-close" aria-label="Close enlarged design image">Close ×</button></form>
+    <div class="image-viewer">
+      <button class="image-arrow image-previous" type="button" aria-label="Previous design image">❮</button>
+      <img class="enlarged-image" alt="">
+      <button class="image-arrow image-next" type="button" aria-label="Next design image">❯</button>
     </div>
   </dialog>
 

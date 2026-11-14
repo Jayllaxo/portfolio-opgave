@@ -29,16 +29,15 @@ document.addEventListener('keydown', function (event) {
   }
 });
 
-// SPILBILLEDER: Et nummer holder styr på det valgte billede.
+// GALLERIER: Et nummer holder styr på det valgte billede i hvert galleri.
 // Første billede har nummer 0, andet billede har nummer 1 osv.
-const gallery = document.querySelector('.gallery');
-
-// Galleriet findes kun på projektsiden.
-if (gallery) {
+// Den samme kode bruges til både spilbilleder og designbilleder.
+document.querySelectorAll('.gallery').forEach(function (gallery) {
   const mainImage = gallery.querySelector('.gallery-main');
   const thumbnails = gallery.querySelectorAll('.gallery-thumbnails button');
   const enlargeButton = gallery.querySelector('.image-enlarge');
-  const imageDialog = document.querySelector('#image-dialog');
+  // Knappens aria-controls fortæller, hvilken dialog galleriet skal åbne.
+  const imageDialog = document.getElementById(enlargeButton.getAttribute('aria-controls'));
   const enlargedImage = imageDialog.querySelector('img');
   let currentImage = 0;
 
@@ -96,4 +95,4 @@ if (gallery) {
   imageDialog.addEventListener('click', function (event) {
     if (event.target === imageDialog) imageDialog.close();
   });
-}
+});
