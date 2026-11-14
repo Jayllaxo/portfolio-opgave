@@ -60,9 +60,9 @@ a:focus-visible, button:focus-visible, video:focus-visible {
 }
 /* Lille overtitel over en sektions overskrift, fx "A little about me". */
 .section-label {
-  font-size: .72rem;
+  font-size: .90rem;
   text-transform: uppercase;
-  letter-spacing: .12em;
+  letter-spacing: .20em;
   line-height: 1.7;
 }
 .skip-link {
@@ -95,7 +95,7 @@ a:focus-visible, button:focus-visible, video:focus-visible {
   letter-spacing: -.08em;
 }
 .logo span {
-  color: #b94325;
+  color: #b92525;
   display: inline-block;
   margin-left: 8px;
 }
@@ -113,12 +113,12 @@ a:focus-visible, button:focus-visible, video:focus-visible {
   flex-wrap: wrap;
 }
 .site-header nav a {
-  font-size: .85rem;
+  font-size: .75rem;
   text-decoration: none;
   padding-block: 6px;
 }
 .site-header nav a:hover {
-  color: #b94325;
+  color: #b92525;
 }
 
 /* === 3. FORSIDENS STORE OVERSKRIFT OG INTROTEKST === */
@@ -131,7 +131,7 @@ h1 {
   margin-block: 26px 30px;
 }
 h1 .italic-heading {
-  color: #b94325;
+  color: #b92525;
 }
 .hero-bottom {
   display: flex;
@@ -140,7 +140,7 @@ h1 .italic-heading {
 }
 .hero-bottom p {
   max-width: 500px;
-  color: #62645b;
+  color: #424340;
   font-size: .95rem;
 }
 
@@ -193,15 +193,15 @@ h2 {
   margin-block: 17px 10px;
   font-size: .65rem;
   text-transform: uppercase;
-  letter-spacing: .1em;
-  color: #62645b;
+  letter-spacing: .20em;
+  color: #494a47;
 }
 .project-card h3 {
   font-size: 1.2rem;
   margin-bottom: 12px;
 }
 .project-card p {
-  color: #62645b;
+  color: #424340;
   font-size: .85rem;
   max-width: 340px;
 }
@@ -230,7 +230,7 @@ h2 {
   margin-top: 0;
 }
 .about-copy > p:not(.section-label) {
-  color: #4d5346;
+  color: #424340;
   margin-top: 16px;
   font-size: .95rem;
 }
@@ -258,7 +258,7 @@ h2 {
   margin-block: 24px 30px;
 }
 .contact h2 .italic-heading {
-  color: #b94325;
+  color: #b92525;
 }
 .contact-link {
   font-size: clamp(1rem, 2.5vw, 1.35rem);
@@ -273,7 +273,7 @@ h2 {
   gap: 12px;
   padding-block: 25px;
   font-size: .7rem;
-  color: #62645b;
+  color: #424340;
 }
 
 /* === 8. STØRRE SKÆRME: Grid og navigation får mere plads. === */
@@ -389,7 +389,7 @@ h2 {
 .project-detail > p {
   max-width: 650px;
   margin-bottom: 24px;
-  color: #62645b;
+  color: #424340;
 }
 .project-video {
   display: block;
@@ -403,7 +403,7 @@ h2 {
 }
 .media-note {
   font-size: .85rem;
-  color: #62645b;
+  color: #424340;
   margin-top: 12px;
 }
 
@@ -430,7 +430,7 @@ h2 {
   background: transparent;
 }
 .gallery-thumbnails button[aria-pressed="true"] {
-  border-color: #b94325;
+  border-color: #b92525;
 }
 .gallery-thumbnails img {
   aspect-ratio: 16 / 9;
@@ -482,13 +482,12 @@ På mobil ombrydes navnene til flere linjer. */
   background: #f8f6f1;
 }
 .project-menu a {
-  font-size: .85rem;
+  font-size: .90rem;
   text-decoration: none;
   padding-block: 4px;
 }
 .project-menu a:hover, .project-menu a:focus-visible {
-  color: #b94325;
-  text-decoration: underline;
+  color: #b92525;
 }
 .project-sections {
   min-width: 0;
