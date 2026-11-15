@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Johan Oejvind Skaarup – multimedia design student at Zealand. Explore my films, photography, games, music, writing and design projects.">
-  <title>Johan Øjvind Skaarup · Portfolio</title>
+  <title>Johan Oejvind Skaarup · Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
@@ -16,52 +16,48 @@
     <a class="logo" href="#forside" aria-label="JS – Johan Oejvind Skaarup, home">JS<span aria-hidden="true">✳︎</span></a>
     <button class="menu-button" type="button" aria-controls="navigation" aria-expanded="false" hidden>Menu <span aria-hidden="true">☰</span></button>
     <nav id="navigation" aria-label="Main navigation">
-      <a href="index.html#forside">Home</a>
+      <a href="index.html#forside" aria-current="page">Home</a>
       <a href="projekter.html">Projects</a>
       <a href="om-mig.html">About me</a>
       <a href="#kontakt">Contact me<span aria-hidden="true"> →</span></a>
     </nav>
   </header>
 
-  <main id="indhold">
+  <main id="indhold" tabindex="-1">
     <!-- INTRO: Ret overskrift og introduktion her. -->
     <section class="hero container" id="forside" aria-labelledby="hero-title">
       <h1 id="hero-title">The digital portfolio<br><span class="italic-heading">of Johan Oejvind Skaarup</span></h1>
-      <div class="hero-bottom">
-        <p>Welcome to my page containing my showreel, an about me and a page with all the projects I've worked on throughout my life that I deem worth showing. From films to music to video games to literary works. Thank you for visiting.</p>
-      </div>
+      <p>Welcome to my page containing my showreel, an about me and a page with all the projects I've worked on throughout my life that I deem worth showing. From films to music to video games to literary works. Thank you for visiting.</p>
     </section>
 
-    <!-- SHOWREEL: Erstat pladsholderen med din egen video. Se README. -->
+    <!-- SHOWREEL: Browserens egen afspiller henter kun videoinformation, indtil man trykker play. -->
     <section class="showreel container" id="showreel" aria-labelledby="reel-title">
-      <div class="section-top"><p class="section-label">Showreel</p></div>
-      <img class="showreel-image" src="assets/showreel.png" alt="Showreel coming soon." width="2360" height="1080">
-      <!-- Når videoen er klar: Erstat billedet ovenfor med:
-      <video class="showreel-video" controls playsinline preload="metadata" poster="assets/showreel.png">
+      <h2 class="section-label" id="reel-title">Showreel</h2>
+      <video class="showreel-video" controls playsinline preload="metadata" poster="assets/showreel-poster.webp" width="1920" height="1080" aria-labelledby="reel-title">
         <source src="assets/showreel.mp4" type="video/mp4">
-        <track kind="captions" src="assets/undertekster.vtt" srclang="en" label="Dansk">
-        Din browser kan ikke afspille videoen. <a href="assets/showreel.mp4">Hent videoen</a>.
+        Your browser does not support video playback. <a href="assets/showreel.mp4">Download the showreel (MP4)</a>.
       </video>
-      Tilføj selv MP4, poster og eventuelle undertekster, før du bruger eksemplet.
-      -->
+      <p class="showreel-description">Explore the projects below for more images, films, music and design work from the showreel.</p>
     </section>
 
     <!-- PROJEKTER: Hvert kort linker til sin egen sektion i projekter.html. -->
     <section class="projects container section-space" id="projekter" aria-labelledby="projects-title">
-      <div class="section-heading"><div><p class="section-label">Projects</p>
-          <h2 id="projects-title">Films. Music. <span class="italic-heading">Creation.</span></h2></div></div>
+      <div class="section-heading">
+        <p class="section-label">Projects</p>
+        <h2 id="projects-title">Films. Music. <span class="italic-heading">Creation.</span></h2>
+      </div>
       <div class="project-grid">
         <article class="project-card">
-          <a class="project-link" href="projekter.html#short-film" aria-label="Learn more about my short film">
+          <a class="project-link" href="projekter.html#short-film" aria-label="Learn more about my videos and films">
             <img src="assets/short_film_screenshot1.png" alt="Screenshot for my videos and films" width="800" height="600" loading="lazy">
             <span class="project-overlay">Learn more</span>
           </a>
-          <div class="project-meta"><span>Video & Film</span><span>01</span></div>
-          <h3>Video & Film Projects</h3>
-          <p>All the videos & films I've made or been involved in.</p>
+          <div class="project-meta"><span>Video &amp; Film</span><span>01</span></div>
+          <h3>Video &amp; Film Projects</h3>
+          <p>All the videos &amp; films I've made or been involved in.</p>
         </article>
         <article class="project-card">
-          <a class="project-link" href="projekter.html#photography" aria-label="Explore my photography albums">
+          <a class="project-link" href="projekter.html#photography" aria-label="Learn more about my photography albums">
             <img src="assets/photography/photography-cover.webp" alt="Narrow woodland path winding through bright green trees and grass" width="800" height="600" loading="lazy" decoding="async">
             <span class="project-overlay">Learn more</span>
           </a>
@@ -106,13 +102,13 @@
           <p>All the literary works I've written or been involved in.</p>
         </article>
         <article class="project-card">
-          <a class="project-link" href="projekter.html#web-design" aria-label="Learn more about my web and design projects">
+          <a class="project-link" href="projekter.html#web-design" aria-label="Learn more about my social media, web and design projects">
             <img src="assets/project_pics_files/decoria_1.jpg" alt="Decoria design project" width="800" height="600" loading="lazy">
             <span class="project-overlay">Learn more</span>
           </a>
-          <div class="project-meta"><span>Web &amp; Design</span><span>07</span></div>
-          <h3>Web &amp; Design Projects</h3>
-          <p>A selection of my websites and design projects.</p>
+          <div class="project-meta"><span>SoMe, Web &amp; Design</span><span>07</span></div>
+          <h3>SoMe, Web &amp; Design Projects</h3>
+          <p>A selection of my social media, websites and design projects.</p>
         </article>
       </div>
       <a class="more-link" href="projekter.html">See more <span aria-hidden="true">→</span></a>
@@ -121,14 +117,15 @@
     <!-- OM MIG: Tilpas teksten, så den afspejler dig og dine kompetencer. -->
     <section class="about section-space" id="om-mig" aria-labelledby="about-title">
       <div class="container about-grid">
-        <img class="portrait-image" src="assets/project_pics_files/cv_4.png" alt="Portrait of Johan Oejvind Skaarup">
+        <img class="portrait-image" src="assets/project_pics_files/portrait-home.webp" alt="Portrait of Johan Oejvind Skaarup" width="800" height="953" loading="lazy" decoding="async">
         <div class="about-copy">
           <p class="section-label">A little about me</p>
-          <h2 id="about-title">Hi, my name is...<br></h2>
+          <h2 id="about-title">Hi, my name is...</h2>
           <p>Hi, my name is Johan Oejvind Skaarup, and I'm 25 years old. The best way I can describe myself is that besides oxygen, I depend on creativity to live. It's a constant need for me - to create something.</p>
-          <p>Currently, I'm studying Multimediadesign at Zealand. Before that I studied Humanism/Journalism at Roskilde University and went to the film school KBH Film- & Fotoskole. Besides that and jobs to pay bills, I've also been a filmmaker, writer, social media manager, lyricist, YouTuber, editor, freelancer and a lot more.</p>
+          <p>Currently, I'm studying Multimedia Design at Zealand. Before that I studied Humanism/Journalism at Roskilde University and went to the film school KBH Film- &amp; Fotoskole. Besides that and jobs to pay bills, I've also been a filmmaker, writer, social media manager, lyricist, YouTuber, editor, freelancer and a lot more.</p>
           <p>What I'm currently working on includes a 2D survival horror video game, writing a music album, writing a book and music production for all three projects.</p>
-          <ul class="skills" aria-label="Areas of expertise"><li>Webdesign</li>
+          <ul class="skills" aria-label="Areas of expertise">
+            <li>Web design</li>
             <li>Visual design</li>
             <li>HTML, CSS &amp; JavaScript</li>
             <li>Music production</li>
@@ -140,9 +137,10 @@
             <li>Writing</li>
             <li>Lyrics</li>
             <li>Photo editing</li>
-            <li>Photo shooting</li>
-            <li>Tech & IT</li>
-            <li>AI assistance</li></ul>
+            <li>Photography</li>
+            <li>Tech &amp; IT</li>
+            <li>AI assistance</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -153,9 +151,11 @@
           <h2 id="contact-title">Contact me below<br><span class="italic-heading">and let's create!</span></h2><a class="contact-link" href="mailto:skaarnet@gmail.com">skaarnet@gmail.com <span aria-hidden="true">→</span></a>
     </section>
 
-    <a class="more-link" href="#forside" style="margin-bottom: 120px">← Back to the top</a>
+    <a class="more-link back-to-top" href="#forside">← Back to the top</a>
   </main>
-  <footer class="site-footer container"><p>© Johan Oejvind Skaarup</p>
-          <p>Designed &amp; coded by me.</p></footer>
+  <footer class="site-footer container">
+    <p>© Johan Oejvind Skaarup</p>
+    <p>Designed &amp; coded by me.</p>
+  </footer>
 </body>
 </html>
